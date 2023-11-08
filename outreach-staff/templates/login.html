@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Swims</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="static/css/main.css" rel="stylesheet">
+  <link href="static/css/bootstrap.min.css" rel="stylesheet">
+ 
+
+ <link href="static/css/all.min.css" rel="stylesheet">
+  <style>
+
+
+#partA{
+
+width: 300px;height: 300px;
+background-image:-webkit-radial-gradient(center,rgba(163, 241, 156, 0.5) 60%, rgb(61, 235, 61) 100%);
+border-radius:150px; 
+transform-origin:center center;  
+animation:fly 9s infinite;
+animation-timing-function:linear;
+position: fixed;
+top:20%;
+left:60%;
+z-index: 1;
+}
+
+#partA:after{
+content:"";
+position:absolute;
+width: 300px;height: 300px;
+background-image:-webkit-radial-gradient(center,rgba(163, 241, 156, 0.5) 60%, rgb(61, 235, 61) 100%);
+border-radius:150px; 
+transform-origin:center center;  
+animation:fly 6s infinite;
+animation-timing-function:linear;
+}
+
+#partA:before{
+content:"";
+position:absolute;
+width: 300px;height: 300px;
+background-image:-webkit-radial-gradient(center,rgba(163, 241, 156, 0.5) 60%, rgb(61, 235, 61) 100%);
+border-radius:150px; 
+transform-origin:center center;  
+animation:fly 3s infinite;
+animation-timing-function:linear;
+}
+
+@-webkit-keyframes fly 
+    {
+       0%   { transform: scale(0.5); opacity: 0;
+             transform-origin:center center;
+            }
+       50%  { transform: scale(1);opacity: 1;                    transform-origin:center center;}
+       100% {transform: scale(1.5);opacity: 0;                  transform-origin:center center;} 
+     }
+
+    #staffSettings {
+     float: right;
+     cursor: pointer; 
+    }
+
+    .serverContr {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100vh;
+      background-color: rgba(16, 123, 216, 0.503);
+    }
+
+    #server_window {
+      background-color: white;
+      padding: 20px;
+      border-radius: 5px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="container mt-5 ">
+
+  
+    <div id="alert" style="display: none; color: red;   position:absolute; top:30%; left:30%; font-size: 20px;">
+      <center>
+        <div class="card shadow p-3 " style="height:130px; width:410px; background-color: rgb(129, 125, 125); z-index: 1;">
+       <div class="card shadow"  style="border-radius: 5px; border-left: 4px solid red; width:380px; height:100px">
+          <div class="d-flex">
+              <i class="fa-solid fa-xmark" style="color: white; padding: 10px; background-color: red; margin:30px ; border-radius: 20px; font-size: 15px; font-weight: bold;"></i><p class="text-center  " style="margin-left: 5px; color:black; margin-top: 30px;">No Internet Connection</p>
+          </div>
+       </div> 
+    </div>
+    </center>
+    </div>
+
+
+
+
+<div class="container mt-5 logo-cont" id="loginContr">
+  <h2 class="text-end">
+   
+    <span id="staffConnecton"></span>
+    <span id="staffSettings">
+      <img src="static/img/settings.png" style="width: 30px;" id="staffSettingsBtn">
+    </span>
+  </h2><br>
+
+  <div class="row " style="margin-top: 50px;">
+ 
+    <div class="col-md-6 login mt-2">
+  
+      <form action="/auth" method='post' style="margin-top: 50px;"  >
+        <h4 class="mb-3">FW Registration System</h4>
+        <div class="mb-4 mt-3">
+          <label for="email">Email</label><br/>
+          <input type="text" class="form-control shadow" id="email" placeholder="Enter email" name="user" required>
+        </div>
+        <div class="mb-4">
+          <label for="pwd">Password</label><br/>
+          <input type="password" class="form-control shadow" id="pwd" placeholder="Enter password" name="pwd" required>
+         <input type="checkbox" id="showPassword" onclick="tPass()" class="mt-2"> Show Password
+        </div>
+        <div class="text-center">
+        <button type="submit" class="btn btn-primary mt-3" style="border: 1px solid black; border-radius: 20px; width:200px; background-color:orangered; color: white;">Submit</button>
+      </div>
+      </form>
+     
+    </div>
+  
+    <div class="col-md-6">
+  
+      <div id="onlineButton" style="display: none;">
+    <div id="partA"></div>
+    </div>
+      <div class="text-center">
+        <img src="static/img/logo.png" style="width:200px;  height:200px; margin-top: 60px;">
+      </div>
+    </div>
+  
+  
+  
+  </div>
+  
+   
+  <br>
+  {% if session['auth_error'] == 'error' %}
+    <h6 class="text-danger text-center">Invalid username/password! Please try again.</h6>
+    {% set _ = session.pop('auth_error', None) %}
+  {% elif session['auth_error'] == 'block' %}
+    <h6 class="text-danger text-center">Access denied! Your account is blocked.</h6>
+    {% set _ = session.pop('auth_error', None) %}
+  {% endif %}
+
+  {% if session['auth_error'] == 'not_connected' %}
+  <h6 class="text-danger text-center">Server is not available.</h6>
+  <p style="display:none;"> {{ session.pop('auth_error', None) }} </p>
+  {% endif %}  
+
+  {% if session['auth_stat'] == 'connected' %}
+  <h6 class="text-center"><span class="bg-success text-white rounded p-2">Connected to the server successfully.</span></h6>
+  <p style="display:none;"> {{ session.pop('auth_stat', None) }} </p>
+  {% endif %}  
+
+</div>
+
+<div class="container-fluid serverContr" id="serverContr" style="display: none;">
+  <div id="server_window">
+    <p style="float: right;"><a href="/" style="text-decoration: none; color: grey">&times;</a></p>
+    <form action="/connect-server" method="post" class="m-t p-5 rounded">
+      <div class="row">
+        <div class="col-md-12">
+          <h6 class="text-center">Enter FW Registration System (Outreach) I.P to connect</h6>
+          <input type="text" class="form-control mt-2" name="server_ip" required>
+          <div class="text-center">
+            <button type="submit" class="btn border border-secondary mt-3">Submit</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+
+<script>
+  function checkInternetConnection() {
+      var alertElement = document.getElementById('alert');
+      var onlineButton = document.getElementById('onlineButton');
+      
+      if (navigator.onLine) {
+          alertElement.style.display = 'none';
+          onlineButton.style.display = 'block';
+      } else {
+          alertElement.style.display = 'block';
+          onlineButton.style.display = 'none';
+      }
+  }
+
+  window.addEventListener('online', checkInternetConnection);
+  window.addEventListener('offline', checkInternetConnection);
+
+  // Initial check
+  checkInternetConnection();
+</script>
+
+<script src="static/js/main.js" defer></script>
+<script src="static/js/all.min.js" defer></script>
+<script src="static/js/bootstrap.min.js" defer></script>
+<script src="static/js/jquery.min.js" defer></script>
+<script src="static/js/staff.js" defer></script>
+</body>
+</html>
+

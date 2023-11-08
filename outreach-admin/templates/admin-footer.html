@@ -1,0 +1,48 @@
+
+</div>
+<!-- End Main Div -->
+
+<br><br>
+
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    //document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+  }
+</script>
+
+
+
+<script>
+  function checkInternetConnection() {
+      var alertElement = document.getElementById('alert');
+      var onlineButton = document.getElementById('onlineButton');
+      
+      if (navigator.onLine) {
+          alertElement.style.display = 'none';
+          onlineButton.style.display = 'block';
+      } else {
+          alertElement.style.display = 'block';
+          onlineButton.style.display = 'none';
+      }
+  }
+
+  window.addEventListener('online', checkInternetConnection);
+  window.addEventListener('offline', checkInternetConnection);
+
+  // Initial check
+  checkInternetConnection();
+</script>
+
+
+<script src="../static/js/main.js" ></script>
+
+</body>
+</html>

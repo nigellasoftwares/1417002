@@ -1,0 +1,139 @@
+{% include 'admin-header.html' %}
+
+
+
+
+{% if session['admin_update_sub_admin_status'] == 'success' %}
+  <script>
+    Swal.fire('Sub Admin Updated Successfully!')
+  </script>
+  <p style="display:none;"> {{ session.pop('admin_update_sub_admin_status', None) }} </p>
+{% endif %}
+
+{% if session['admin_update_sub_admin_status'] == 'error' %}
+  <script>
+    Swal.fire('Sub Admin Updation Fail!, please try again.')
+  </script>
+  <p style="display:none;"> {{ session.pop('admin_update_sub_admin_status', None) }} </p>
+{% endif %}   
+
+
+{% if session['admin_del_sub_admin_status'] == 'success' %}
+  <script>
+    Swal.fire('Sub Admin Deleted Successfully!')
+  </script>
+  <p style="display:none;"> {{ session.pop('admin_del_sub_admin_status', None) }} </p>
+{% endif %}
+
+
+{% if session['admin_del_sub_admin_status'] == 'error' %}
+    <script>
+        Swal.fire('Sub Admin Deletion Fail!')
+    </script>
+    <p style="display:none;"> {{ session.pop('admin_del_sub_admin_status', None) }} </p>
+{% endif %}
+
+
+
+<div class="back-button-div">
+  <a href="/admin-dash" class="back-button">Home</a> 
+</div>
+<br>
+<div class="container">
+  {% if(session['langMalay']) == 'malay' %}
+  <h5>Jumlah Sub Pentadbir- {{total_subAdmin}}</h5>
+  {% else %}
+  <h5>Total Sub Admin- {{total_subAdmin}}</h5>
+  {% endif %}
+    
+    <br>
+    <table id="myTable" class="display">
+      <thead>
+        <tr>
+          <th>
+            {% if(session['langMalay']) == 'malay' %}
+            Nama Pengguna
+            {% else %}
+            User Name
+            {% endif %}
+          </th>
+          <th>
+            {% if(session['langMalay']) == 'malay' %}
+            E-mel Pengguna
+            {% else %}
+            User E-mail
+            {% endif %}
+          </th>
+          <th>
+            {% if(session['langMalay']) == 'malay' %}
+            Kata Laluan Pengguna
+            {% else %}
+            User Password
+            {% endif %}
+          </th>
+          <th>
+            {% if(session['langMalay']) == 'malay' %}
+            Tarikh Penciptaan
+            {% else %}
+            Creation Date
+            {% endif %}
+          </th>
+          <th>
+            {% if(session['langMalay']) == 'malay' %}
+            Status
+            {% else %}
+            Status
+            {% endif %}
+          </th>
+          <th>
+            {% if(session['langMalay']) == 'malay' %}
+            Tindakan
+            {% else %}
+            Action
+            {% endif %}
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for user in subAdmin_list %}
+          <tr>
+            <td>{{user[1]}}</td>
+            <td>{{user[2]}}</td>
+            <td>{{user[3]}}</td>
+            <td>{{user[5]}}</td>
+            <td>
+                {% if user[4] == 'Active' %}
+                    <b class="text-success">Active</b>
+                {% elif user[4] == 'Block' %}
+                    <b class="text-danger">Blocked</b>
+                {%endif%}
+            
+            </td>
+            <td>
+              <a href="/admin-edit-sub-admin?usI={{user[0]}}" class="btn btn-secondary">
+                {% if(session['langMalay']) == 'malay' %}
+                Sunting
+                {% else %}
+                Edit
+                {% endif %}
+              </a>
+              <a href="/admin-del-sub-admin?usI={{user[0]}}" class="btn btn-danger">
+                {% if(session['langMalay']) == 'malay' %}
+                Padam
+                {% else %}
+                Delete
+                {% endif %}
+              </a>
+            </td>
+          </tr>
+        {%endfor%}
+      </tbody>
+        
+      </table>
+</div>
+<script>
+    $(document).ready( function () {
+      $('#myTable').DataTable();
+    });
+</script>
+{% include 'admin-footer.html' %}

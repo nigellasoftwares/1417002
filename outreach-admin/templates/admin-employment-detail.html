@@ -1,0 +1,96 @@
+{% include 'admin-header.html' %}
+
+
+{% if session['admin_create_employment_detail'] == 'success' %}
+  <script>
+    Swal.fire('Employment Detail Created Successfully!')
+  </script>
+  <p style="display:none;"> {{ session.pop('admin_create_employment_detail', None) }} </p>
+{% endif %}
+
+{% if session['admin_create_employment_detail'] == 'error' %}
+  <script>
+    Swal.fire('Operation Failed! Please Retry.')
+  </script>
+  <p style="display:none;"> {{ session.pop('admin_create_employment_detail', None) }} </p>
+{% endif %}   
+
+
+{% if session['admin_del_employment_detail'] == 'success' %}
+  <script>
+    Swal.fire('Deleted Successfully!')
+  </script>
+  <p style="display:none;"> {{ session.pop('admin_del_employment_detail', None) }} </p>
+{% endif %}
+
+
+{% if session['admin_del_employment_detail'] == 'error' %}
+    <script>
+        Swal.fire('Deletion Fail!')
+    </script>
+    <p style="display:none;"> {{ session.pop('admin_del_employment_detail', None) }} </p>
+{% endif %}
+
+
+
+<div class="back-button-div">
+  <a href="/admin-dash" class="back-button">Home</a> 
+</div>
+<br>
+<div class="container">
+    <form action="/admin-create-employment-detail" method="post" class="mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <input type="text" name="employment_detail" required class="form-control" placeholder="Enter Employment Detail">
+            </div>
+            <div class="col-md-6">
+                <input type="submit" class="form-control btn btn-primary" value="Create">
+            </div>
+        </div>
+    </form>
+    <br><br><br>
+
+    <table id="myTable" class="display">
+      <thead>
+        <tr>
+          <th>
+            {% if(session['langMalay']) == 'malay' %}
+            Butiran Pekerjaan
+            {% else %}
+            Employment Details
+            {% endif %}
+          </th>
+          <th>
+            {% if(session['langMalay']) == 'malay' %}
+            Tindakan
+            {% else %}
+            Action
+            {% endif %}
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for data in dataList %}
+          <tr>
+            <td>{{data[1]}}</td>
+            <td>
+              <a href="/admin-del-employment-detail?del={{data[0]}}" class="btn btn-danger">
+                {% if(session['langMalay']) == 'malay' %}
+                Padam
+                {% else %}
+                Delete
+                {% endif %}
+              </a>
+            </td>
+          </tr>
+        {%endfor%}
+      </tbody>
+        
+      </table>
+</div>
+<script>
+    $(document).ready( function () {
+      $('#myTable').DataTable();
+    });
+</script>
+{% include 'admin-footer.html' %}

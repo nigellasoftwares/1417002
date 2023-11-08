@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>API Request Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <button id="getData">Get Data from API</button>
+    <div id="result"></div>
+
+    <script>
+        $(document).ready(function() {
+            $('#getData').click(function() {
+                const apiUrl = 'https://103.91.65.48/SIFWAPI/AuthenticateUser'; // Replace with your API endpoint URL
+
+                const data = {
+                    "Username": "SIFWuser1",
+                    "Password": "User1SIFW2019"
+                };
+
+                const headers = {
+                    'Content-Type': 'application/json'
+                    /*'Host': 'your-host',
+                    'User-Agent': 'your-user-agent',
+                    'Accept': 'application/json',
+                    'Accept-Encoding': 'gzip, deflate, br',
+                    'Connection': 'keep-alive' */
+                };
+
+                // Make a POST request to the API using jQuery's $.ajax
+                $.ajax({
+                    url: apiUrl,
+                    method: 'POST',
+                    headers: headers,
+                    data: JSON.stringify(data), // JSON payload
+                    dataType: 'json',
+                    xhrFields: {
+                        withCredentials: true,
+                        crossDomain: true
+                    },
+                    success: function(apiResponseData) {
+                        // Handle the API response here
+                        $('#result').html(JSON.stringify(apiResponseData, null, 2));
+                    },
+                    error: function(xhr, status, error) {
+                        // Handle errors here
+                        console.error('AJAX error:', error);
+                        $('#result').html('Error occurred while fetching data.');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

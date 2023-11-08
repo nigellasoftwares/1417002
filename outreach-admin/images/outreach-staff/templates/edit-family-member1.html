@@ -1,0 +1,391 @@
+{% include 'header.html' %}
+<div class="back-button-div">
+    <a href="/add-worker" class="back-button">Home</a>
+    <a href="/my-registration-list" class="back-button">Registration List</a>
+    <a href="/edit-registered-worker1?view-regWor={{wori}}" class="back-button">Worker</a>
+</div><br>
+
+<div class="container">
+    
+    <br>
+    <!-- Worker Details -->
+    {% for fm in fmData %}
+        {% if(session['langMalay']) == 'malay' %}
+        <h5>Butiran Ahli Keluarga</h5>
+        {% else %}
+        <h5>Family Member Details</h5>
+        {% endif %}
+    <hr>
+    <form action="/update-family-member1" method="post">
+        <div class="row">
+            <div class="col-6">
+                <input type="hidden" name="fm_id" value="{{fm[0]}}">
+                <p><b>Registration No-</b> <input type="text" value="{{fm[4]}}" disabled></p>
+            </div>
+            <div class="col-6">
+                <p><b>Name-</b> <input type="text" name="fm_name" value="{{fm[7]}}"></p>
+            </div>
+        </div>
+        <!--End Row-->
+        <div class="row">
+            <div class="col-6">
+                <p><b>RelationShip-</b> <input type="text" name="fm_relationship" value="{{fm[6]}}"></p>
+            </div>
+            <div class="col-6">
+                <p><b>Family Name-</b> <input type="text" name="fm_family_name" value="{{fm[8]}}"></p>
+            </div>
+        </div>
+        <!--End Row-->
+        <div class="row">
+            <div class="col-6">
+                <p><b>Created By-</b> <input type="text" value="{{fm[1]}}" disabled></p> 
+            </div>
+            <div class="col-6">
+                <p><b>Created Date-</b> <input type="text" value="{{fm[2]}}" disabled></p>
+            </div>
+        </div>
+        <!--End Row-->
+        <div class="row">
+            <div class="col-6">
+                <p><b>Family Together-</b> <input type="text" name="family_together" value="{{fm[9]}}"></p>
+            </div>
+            <div class="col-6">
+                <p><b>Point of Entry-</b> <input type="text" name="poe" value="{{fm[10]}}"></p>
+            </div>
+        </div>
+        <!--End Row-->
+        <div class="row">
+            <div class="col-6">
+                <p><b>Gender-</b> <input type="text" name="gender" value="{{fm[14]}}"></p>
+            </div>
+            <div class="col-6">
+                <p><b>Marital Status-</b> <input type="text" name="marital_status" value="{{fm[13]}}"></p>
+            </div>
+        </div>
+        <!--End Row-->
+        <div class="row">
+            <div class="col-6">
+                <p><b>Citizenship-</b> <input type="text" name="citizenship" value="{{fm[11]}}"></p>
+            </div>
+            <div class="col-6">
+                <p><b>Religion-</b> <input type="text" name="religion" value="{{fm[12]}}"></p>
+            </div>
+        </div>
+        <!--End Row-->
+        <div class="row">
+            <div class="col-6">
+                <p><b>Address 1-</b> <input type="text" name="address1" value="{{fm[15]}}"></p>
+            </div>
+            <div class="col-6">
+                <p><b>Address 2-</b> <input type="text" name="address2" value="{{fm[16]}}"></p>
+            </div>
+        </div>
+        <!--End Row-->
+        <div class="row">
+            <div class="col-6">
+                <p><b>Address 3-</b> <input type="text" name="address3" value="{{fm[17]}}"></p>
+            </div>
+            <div class="col-6">
+                <p><b>Postcode-</b> <input type="text" name="postcode" value="{{fm[18]}}"></p>
+            </div>
+        </div>
+        <!--End Row-->
+        <div class="row">
+            <div class="col-6">
+                <p><b>City-</b> <input type="text" name="city" value="{{fm[19]}}"></p>
+            </div>
+            <div class="col-6">
+                <p><b>State-</b> <input type="text" name="state" value="{{fm[20]}}"></p>
+            </div>
+        </div>
+        <!--End Row-->
+        <div class="row">
+            <div class="col-6">
+                <p><b>Contact No.-</b> <input type="text" name="contact_no" value="{{fm[21]}}"></p>
+            </div>
+            <div class="col-6">
+                <p><b>Race-</b> <input type="text" name="race" value="{{fm[22]}}"></p>
+            </div>
+        </div>
+        <!--End Row-->
+        <div class="row">
+            <div class="col-6">
+                <p><b>Place of Birth-</b> <input type="text" name="place_of_birth" value="{{fm[23]}}"></p>
+            </div>
+            <div class="col-6">
+                <p><b>Employee Status-</b> <input type="text" name="employee_status" value="{{fm[24]}}"></p>
+            </div>
+        </div>
+        <!--End Row-->
+        <div class="row">
+            <div class="col-6">
+                <p><b>Employee Name-</b> <input type="text" name="employee_name" value="{{fm[25]}}"></p>
+            </div>
+            <div class="col-6">
+                <p><b>Employee Address-</b> <input type="text" name="employee_address" value="{{fm[26]}}"></p>
+            </div>
+        </div>
+        <!--End Row-->
+
+        <!-- Family Member Doument Details -->
+        <br><br>
+        <hr>
+        {% if(session['langMalay']) == 'malay' %}
+        <h5>Butiran Dokumen Ahli Keluarga</h5>
+        {% else %}
+        <h5>Family Member Document Detail's</h5>
+        {% endif %}
+        <hr>
+        <br>
+        <h5><span class="border-bottom">Document 1</h5>
+        <br>
+        
+        <div class="row">
+            <div class="col-6">
+                <img src="{{docsPath}}doc1/uploaded_image.jpg" onerror="this.onerror=null; this.src='./static/img/no-image.png'" id="openImageLink1" style="width: 50px; height: 50px;">
+            </div>
+
+            <div class="image-overlay" id="imageOverlay1">
+                <span class="close-button" id="closeButton1">&times;</span>
+                <div class="image-container">
+                    <img src="{{docsPath}}doc1/uploaded_image.jpg" onerror="this.onerror=null; this.src='./static/img/no-image.png'" alt="Image">
+                </div>
+            </div>
+
+            <script>
+                function viewImg (openImageLink_in, imageOverlay_in, closeButton_in){
+                    const openImageLink = document.getElementById(openImageLink_in);
+                    const imageOverlay = document.getElementById(imageOverlay_in);
+                    const closeButton = document.getElementById(closeButton_in);
+
+                    openImageLink.addEventListener("click", function (e) {
+                        e.preventDefault();
+                        imageOverlay.style.display = "block";
+                    });
+
+                    closeButton.addEventListener("click", function () {
+                        imageOverlay.style.display = "none";
+                    });
+                }
+
+                viewImg("openImageLink1", "imageOverlay1", "closeButton1");
+            </script>
+        </div>
+        <!-- End Row -->
+        <br>
+        <div class="row">
+            <div class="col-6">
+                <p><b>Type of Document-</b> <input type="text" name="type_of_document1" value="{{fm[30]}}"></p>
+            </div>
+            <div class="col-6">
+                <p><b>Document ID-</b> <input type="text" name="document_id1" value="{{fm[31]}}"></p>
+            </div>
+        </div>
+        <!--End Row-->
+        <div class="row">
+            <div class="col-6">
+                <p><b>Place of Issue-</b> <input type="text" name="place_of_issue1" value="{{fm[32]}}"></p>
+            </div>
+            <div class="col-6">
+                <p><b>Issue Date-</b> <input type="text" name="issue_date1" value="{{fm[33]}}"></p>
+            </div>
+        </div>
+        <!--End Row-->
+        <div class="row">
+            <div class="col-6">
+                <p><b>Expiry Date-</b> <input type="text" name="expiry_date1" value="{{fm[34]}}"></p>
+            </div>
+            <div class="col-6">
+                <p><b>Issuing Country-</b> <input type="text" name="issuing_country1" value="{{fm[35]}}"></p>
+            </div>
+        </div>
+        <!--End Row-->
+        <div class="row">
+            <div class="col-6">
+                <p><b>Document Status-</b> <input type="text" name="document_status1" value="{{fm[36]}}"></p>
+            </div>
+            <div class="col-6">
+                <p><b>Document Current Status-</b> <input type="text" name="document_current_status1" value="{{fm[37]}}"></p>
+            </div>
+        </div>
+        <!--End Row-->
+
+        <br>
+        <h5><span class="border-bottom">Document 2</h5>
+        <br>
+        <div class="row">
+            <div class="col-6">
+                <img src="{{docsPath}}doc2/uploaded_image.jpg" onerror="this.onerror=null; this.src='./static/img/no-image.png'" id="openImageLink2" style="width: 50px; height: 50px;">
+            </div>
+    
+            <div class="image-overlay" id="imageOverlay2">
+                <span class="close-button" id="closeButton2">&times;</span>
+                <div class="image-container">
+                    <img src="{{docsPath}}doc2/uploaded_image.jpg" onerror="this.onerror=null; this.src='./static/img/no-image.png'" alt="Image">
+                </div>
+            </div>
+    
+            <script>
+                function viewImg (openImageLink_in, imageOverlay_in, closeButton_in){
+                    const openImageLink = document.getElementById(openImageLink_in);
+                    const imageOverlay = document.getElementById(imageOverlay_in);
+                    const closeButton = document.getElementById(closeButton_in);
+    
+                    openImageLink.addEventListener("click", function (e) {
+                        e.preventDefault();
+                        imageOverlay.style.display = "block";
+                    });
+    
+                    closeButton.addEventListener("click", function () {
+                        imageOverlay.style.display = "none";
+                    });
+                }
+    
+                viewImg("openImageLink2", "imageOverlay2", "closeButton2");
+            </script>
+        </div>
+        <!-- End Row -->
+        <br>
+        <div class="row">
+            <div class="col-6">
+                <p><b>Type of Document-</b> <input type="text" name="type_of_document2" value="{{fm[38]}}"></p>
+            </div>
+            <div class="col-6">
+                <p><b>Document ID-</b> <input type="text" name="document_id2" value="{{fm[39]}}"></p>
+            </div>
+        </div>
+        <!--End Row-->
+        <div class="row">
+            <div class="col-6">
+                <p><b>Place of Issue-</b> <input type="text" name="place_of_issue2" value="{{fm[40]}}"></p>
+            </div>
+            <div class="col-6">
+                <p><b>Issue Date-</b> <input type="text" name="issue_date2" value="{{fm[41]}}"></p>
+            </div>
+        </div>
+        <!--End Row-->
+        <div class="row">
+            <div class="col-6">
+                <p><b>Expiry Date-</b> <input type="text" name="expiry_date2" value="{{fm[42]}}"></p>
+            </div>
+            <div class="col-6">
+                <p><b>Issuing Country-</b> <input type="text" name="issuing_country2" value="{{fm[43]}}"></p>
+            </div>
+        </div>
+        <!--End Row-->
+        <div class="row">
+            <div class="col-6">
+                <p><b>Document Status-</b> <input type="text" name="document_status2" value="{{fm[44]}}"></p>
+            </div>
+            <div class="col-6">
+                <p><b>Document Current Status-</b> <input type="text" name="document_current_status2" value="{{fm[45]}}"></p>
+            </div>
+        </div>
+        <!--End Row-->
+        <br>
+        <div class="row">
+            <div class="col-6">
+                <button type="submit" class="btn btn-primary">Update Family Member Details</button>
+            </div>
+        </div>
+        <!--End Row-->
+        <!-- End * Family Member Document Details -->
+    </form>
+
+    {%endfor%}
+    <!-- End Family Member Details -->
+
+
+    <div class="m-5">
+        <form action="/get-profile-bio-data2" method="get">
+            <div class="row">
+                <div class="col-md-4">
+                    <input type="hidden" name="fm" value="{{fm}}">
+                    <select name="DocID" class="form-control">
+                        <option selected disabled>Select Dummy DocID</option>
+                        <option>154</option>
+                        <option>155</option>
+                        <option>159</option>
+                        <option>160</option>
+                        <option>161</option>
+                        <option>162</option>
+                        <option>163</option>
+                        <option>164</option>
+                        <option>165</option>
+                        <option>271</option>
+                    </select>
+                    <br>
+                    <button type="submit" class="btn btn-dark" id="getBioBtn">Get BioData</button>
+                </div>
+            </div>
+        </form>
+        <br>
+
+
+        <!-- Insert/Update BioData -->
+        {% if bioData %}
+        <div class="row">
+            <form action="/update-fm-biodata" method="post">
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="hidden" name="fm_reg_no" value="{{fm_reg_no}}">
+                        <input type="hidden" name="docId" value="{{bioData['ProfileBioData']['DocId']}}">
+                        <input type="hidden" name="faceImage" value="{{bioData['ProfileBioData']['FaceImage']}}">
+
+                        {% if bioData %}
+                            {% for finger in bioData['ProfileBioData']['FingerInfo'] %}
+                                {% if loop.index == 1 %}
+                                    <input type="hidden" name="totalFingers" value="{{loop.length}}"> 
+                                {% endif %} 
+                                <input type="hidden" name="fingerRemarks{{loop.index}}" value="{{finger['FingerRemarks']}}">
+                                <input type="hidden" name="fingerImage{{loop.index}}" value="{{finger['FingerImage']}}">
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+                </div>
+                <input type="submit" class="btn btn-primary col-md-2" value="Update BioData">
+            </form>
+        </div>
+        {% endif %}
+        <!-- End * Insert/Update BioData -->
+        <br>
+
+
+
+
+        <!-- Response Data -->
+        {% if bioData %}
+        <div class="row border bg-secondary rounded border-dark p-3" id="getBioContainer">
+            <div class="col-md-4">
+                <h6 class="text-center text-white"><span class="border rounded p-2">Photo</span></h6>
+                <span class="border rounded bg-white border-dark m-3" style="width: 100%; height: 450px; display: inline-block;">
+                {% if bioData %}
+                <img src="data:image/png;base64,{{bioData['ProfileBioData']['FaceImage']}}" style="width: 100%; height: 100%;">
+                {% endif %} 
+                </span>
+            </div>
+            <div class="col-md-8" style="margin-left: auto; margin-right: auto;">
+                <h6 class="text-center text-white"><span class="border rounded p-2">Fingerprints</span></h6>
+                <div class="row text-center">
+                    {% if bioData %}
+                        {% for finger in bioData['ProfileBioData']['FingerInfo'] %}
+                            <span class="border rounded bg-white border-dark m-3 p-2" style="width: 120px; height: 120px; display: inline-block;">
+                                <img src="data:image/png;base64,{{finger['FingerImage']}}" style="width: 100%; height: 100%;">
+                            </span>
+                        {% endfor %}
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+
+
+
+</div>        
+<!-- End Container -->
+  
+
+
+{% include 'footer.html' %}
+

@@ -1,0 +1,81 @@
+{% include 'sub-user-header.html' %}    
+
+{% if(session['sub_user_profile_success']) %}
+  <script>
+    Swal.fire('Your password updated successfully')
+  </script>
+  <p style="display:none;"> {{ session.pop('sub_user_profile_success', None) }} </p>
+{% elif (session['sub_user_profile_error']) %}
+  <script>
+    Swal.fire('Something wrong! please try again.')
+  </script>
+  <p style="display:none;">{{ session.pop('sub_user_profile_error', None) }}</p>
+{% endif %}
+
+
+
+<div class="container">
+     <div class="row mt-5">
+        <div class="col-md-3"></div>
+        <div class="col-md-6 mt-5">
+            <div class="bg-primary rounded p-5 m-5 text-white text-center">
+                <h6><b>Your Parent: </b>{{subUserRoot_name}} ({{subUserRoot_username}})</h6>
+            </div>
+
+            <div class="bg-primary rounded p-5 m-5 text-white">
+                <h5>Your Profile</h5>
+                <hr>
+                {% for subUser in subUserData %}
+                    <h6><b>Name:</b> {{subUser[1]}}</h6>
+                    <h6><b>Username:</b> {{subUser[2]}}</h6>
+                    <h6><b>Password:</b> {{subUser[3]}}</h6>
+                    <h6><b>Creation Date & Time:</b> {{subUser[5]}} {{subUser[6]}}</h6>
+
+                    <button class="btn btn-dark mt-3 border-white" id="change_password">Change Password</button>
+
+                    <form action="sub-user-update-password" method="post" id="password_form" style="display: none; margin-top: 10px;">
+                        <input type="text" name="password" id="password" required class="form-control" placeholder="Enter new passowrd">
+                        <input type="submit" value="Submit" id="submitForm" class="btn btn-dark border-white mt-4">
+                        <button class="btn btn-danger border-white mt-4" id="formCancel">Cancel</button>
+                    </form>
+                {% endfor %}
+            </div>
+            
+        </div>
+     </div> 
+             
+    
+       
+</div>
+  
+{% include 'sub-user-footer.html' %}
+
+<script>
+    $(document).ready(function(){
+        var change_password = $('#change_password')
+        var password_form = $('#password_form')
+        var submitForm = $('#submitForm')
+        var password = $('#password')
+        var formCancel = $('#formCancel')
+        // Show Form
+        change_password.click(function(){
+            change_password.hide()
+            password_form.show()
+        });
+        // Show Btn
+        formCancel.click(function(){
+            change_password.show()
+            password_form.hide()
+        });
+
+        // Submit Form
+        submitForm.click(function(){
+            if (!password == "" && !password == null){
+                change_password.show()
+                password_form.hide()
+            }
+            
+        });
+    });
+</script>
+

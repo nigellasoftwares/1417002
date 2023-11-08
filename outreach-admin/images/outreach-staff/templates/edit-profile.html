@@ -1,0 +1,661 @@
+{% include 'header.html' %}    
+
+{% if(session['edit_profile_success']) %}
+  <script>
+    Swal.fire('Profile updated successfully')
+  </script>
+  <p style="display:none;"> {{ session.pop('edit_profile_success', None) }} </p>
+{% elif (session['edit_profile_error']) %}
+  <script>
+    Swal.fire('Something wrong! please try again.')
+  </script>
+  <p style="display:none;">{{ session.pop('edit_profile_error', None) }}</p>
+{% endif %}
+
+
+    <div class="container" id="profile_div">
+      <form action="/edit-profile-form-data" method='post'>
+
+        {% for profile in profileData %}
+
+        <h5>
+          {% if(session['langMalay']) == 'malay' %}
+            Edit Dafter APS
+          {% else %}
+           Edit Register APS
+          {% endif %}
+        </h5>
+        <hr>
+
+        <div class="row mt-3">
+            <input type="hidden" name="profile_id" value="{{profile[0]}}">
+          <div class="col-md-6">
+            <label for="agency_pekerjaan">
+              {% if(session['langMalay']) == 'malay' %}
+                Nama Agency Pekerjaan
+              {% else %}
+                Name of Agency Pekerjaan
+              {% endif %}
+              
+            </label>
+            <input type="text" class="form-control" id="agency_pekerjaan" name="aps_agency_pekerjaan" value="{{profile[1]}}" required>
+          </div>
+          <div class="col-md-6">
+            <label for="aps_license_category">
+              {% if(session['langMalay']) == 'malay' %}
+                Jenis lesen
+              {% else %}
+                License Category
+              {% endif %}
+            </label>
+            <select id="aps_license_category" name="aps_license_category" class="form-control" required>
+              <option selected value="{{profile[2]}}">current({{profile[2]}})</option>
+              {%for licenseCategory in licenseCategoryList%}
+              <option>{{licenseCategory[0]}}</option>
+              {%endfor%}
+            </select>
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col-md-6">
+            <label for="new_SSM_number">
+              {% if(session['langMalay']) == 'malay' %}
+                No SSM baharu
+              {% else %}
+                New SSM number
+              {% endif %}
+            </label>
+            <input type="text" class="form-control" id="new_SSM_number" name="aps_new_ssm_number" value="{{profile[5]}}" required>
+          </div>
+
+          <div class="col-md-6">
+            <label for="profile_old_SSM_number">
+              {% if(session['langMalay']) == 'malay' %}
+                No SSM lama
+              {% else %}
+                Old SSM number
+              {% endif %}
+            </label>
+            <input type="text" class="form-control" id="profile_old_SSM_number" name="aps_old_ssm_number" value="{{profile[9]}}" required>
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col-md-6">
+            <label for="aps_license_no">
+              {% if(session['langMalay']) == 'malay' %}
+                No lesen APS
+              {% else %}
+                APS License No.
+              {% endif %}
+            </label>
+            <input type="text" class="form-control" id="aps_license_no" name="aps_license_no" value="{{profile[13]}}" required>
+          </div>
+          <div class="col-md-6">
+            <label for="profile_license_exp_date">
+              {% if(session['langMalay']) == 'malay' %}
+                Tarikh tamat lesen
+              {% else %}
+                License expiry date
+              {% endif %}
+            </label>
+            <input type="date" class="form-control" id="profile_license_exp_date" value="{{profile[15]}}" name="aps_license_exp_date" required>
+          </div>
+        </div>
+
+
+          <div class="row mt-3">
+            <div class="col-md-6">
+              <label for="profile_address1">
+                {% if(session['langMalay']) == 'malay' %}
+                  Alamat 1
+                {% else %}
+                  Address 1
+                {% endif %}
+              </label>
+              <textarea class="form-control" id="profile_address1" name="aps_address1" required >{{profile[6]}}</textarea>
+            </div>
+            <div class="col-md-6">
+              <label for="profile_address2">
+                {% if(session['langMalay']) == 'malay' %}
+                  Alamat 2
+                {% else %}
+                  Address 2
+                {% endif %}
+              </label>
+              <textarea class="form-control" id="profile_address2" name="aps_address2" required>{{profile[10]}}</textarea>
+            </div>
+          </div>
+
+          <div class="row mt-3">
+            <div class="col-md-6">
+              <label for="profile_address3">
+                {% if(session['langMalay']) == 'malay' %}
+                  Alamat 3
+                {% else %}
+                  Address 3
+                {% endif %}
+              </label>
+              <textarea class="form-control" id="aps_address3" name="aps_address3" required>{{profile[14]}}</textarea>
+            </div>
+            <div class="col-md-6">
+              <label for="postcode">
+                {% if(session['langMalay']) == 'malay' %}
+                  Pos Kod
+                {% else %}
+                  Postcode
+                {% endif %}
+              </label>
+              <input type="text" class="form-control" id="postcode" name="aps_postcode" value="{{profile[3]}}" required>
+            </div>
+          </div>
+
+          <div class="row mt-3">
+            <div class="col-md-6">
+              <label for="profile_city">
+                {% if(session['langMalay']) == 'malay' %}
+                  Bandar
+                {% else %}
+                  City
+                {% endif %}
+              </label>
+              <select id="profile_city" name="aps_city" class="form-control" required>
+                <option selected value="{{profile[7]}}">current({{profile[7]}})</option>
+                {%for city in cityList%}
+                  <option>{{city[0]}}</option>
+                {%endfor%}
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label for="profile_state">
+                {% if(session['langMalay']) == 'malay' %}
+                  Negeri
+                {% else %}
+                  State
+                {% endif %}
+              </label>
+              <select id="profile_state" name="aps_state" class="form-control" required>
+                <option selected value="{{profile[11]}}">current({{profile[11]}})</option>
+                {%for state in stateList%}
+                  <option>{{state[0]}}</option>
+                {%endfor%}
+              </select>
+            </div>
+          </div>
+
+          <div class="row mt-3">
+            <div class="col-md-6">
+              <label for="aps_mobile_number">
+                {% if(session['langMalay']) == 'malay' %}
+                  No telefon bimbit
+                {% else %}
+                  Mobile number
+                {% endif %}
+              </label>
+              <input type="text" class="form-control" id="aps_mobile_number" name="aps_mobile_number" value="{{profile[8]}}" required>
+            </div>
+            <div class="col-md-6">
+              <label for="aps_contact_person">
+                {% if(session['langMalay']) == 'malay' %}
+                  Orang Yang Dihubungi
+                {% else %}
+                  Contact Person
+                {% endif %}
+              </label>
+              <input type="text" class="form-control" id="aps_contact_person" name="aps_contact_person" value="{{profile[16]}}" required>
+            </div>
+          </div>
+
+        <div class="row mt-3">
+          <div class="col-md-6">
+            <label for="office_telephone_no">
+              {% if(session['langMalay']) == 'malay' %}
+                No telefon pejabat
+              {% else %}
+                Office telephone no
+              {% endif %}
+            </label>
+            <input type="text" class="form-control" id="office_telephone_no" name="aps_office_telephone_no" value="{{profile[4]}}" required> 
+          </div>
+          <div class="col-md-6">
+            
+          </div>
+        </div>
+      
+
+
+        <br><br><br>
+        <h5>
+          {% if(session['langMalay']) == 'malay' %}
+            Edit Daftar Majikan
+          {% else %}
+            Edit Register Employer
+          {% endif %}
+        </h5>
+        <hr>
+        <div class="row mt-3">
+          <div class="col-md-6">
+            <label for="employer_company_name">
+              {% if(session['langMalay']) == 'malay' %}
+                Nama Syarikat
+              {% else %}
+                Company name
+              {% endif %}
+            </label>
+            <input type="text" class="form-control" id="employer_company_name" name="employer_company_name" value="{{profile[17]}}" required>
+          </div>
+          <div class="col-md-6">
+            <label for="employer_new_SSM_number">
+              {% if(session['langMalay']) == 'malay' %}
+                No SSM baharu
+              {% else %}
+                New SSM number
+              {% endif %}
+            </label>
+            <input type="text" class="form-control" value="{{profile[18]}}" id="employer_new_SSM_number" name="employer_new_ssm_number" required>
+          </div>
+        </div>
+  
+        <div class="row mt-3">
+          <div class="col-md-6">
+            <label for="employer_old_SSM_number">
+              {% if(session['langMalay']) == 'malay' %}
+                No SSM lama
+              {% else %}
+                Old SSM number
+              {% endif %}
+            </label>
+            <input type="text" class="form-control" value="{{profile[19]}}" id="employer_old_SSM_number" name="employer_old_ssm_number" required>
+          </div>
+          <div class="col-md-6">
+            <label for="employer_address1">
+              {% if(session['langMalay']) == 'malay' %}
+                Alamat 1
+              {% else %}
+                Address 1
+              {% endif %}
+            </label>
+            <textarea required class="form-control" id="employer_address1" name="employer_address1">{{profile[20]}}</textarea>
+          </div>
+        </div>
+  
+        <div class="row mt-3">
+          <div class="col-md-6">
+            <label for="employer_address2">
+              {% if(session['langMalay']) == 'malay' %}
+                Alamat 2
+              {% else %}
+                Address 2
+              {% endif %}
+            </label>
+            <textarea required class="form-control" id="employer_address2" name="employer_address2">{{profile[21]}}</textarea>
+          </div>
+          <div class="col-md-6">
+            <label for="employer_address3">
+              {% if(session['langMalay']) == 'malay' %}
+                Alamat 3
+              {% else %}
+                Address 3
+              {% endif %}
+            </label>
+            <textarea required class="form-control" id="employer_address3" name="employer_address3">{{profile[22]}}</textarea>
+          </div>
+        </div>
+  
+        <div class="row mt-2">
+          <div class="col-md-6">
+            <label for="employer_postcode">
+              {% if(session['langMalay']) == 'malay' %}
+                Poskod
+              {% else %}
+                Postcode
+              {% endif %}
+            </label>
+            <input type="text" required class="form-control" value="{{profile[23]}}" id="employer_postcode" name="employer_postcode">
+          </div>
+          <div class="col-md-6">
+            <label for="employer_city">
+              {% if(session['langMalay']) == 'malay' %}
+                Bandar
+              {% else %}
+                City
+              {% endif %}
+            </label>
+            <select id="employer_city" name="employer_city" class="form-control" required>
+              <option selected value="{{profile[24]}}">current({{profile[24]}})</option>
+              {%for city in cityList%}
+                <option>{{city[0]}}</option>
+              {%endfor%}
+            </select>
+          </div>
+        </div>
+  
+        <div class="row mt-2">
+          <div class="col-md-6">
+            <label for="employer_state">
+              {% if(session['langMalay']) == 'malay' %}
+                Negeri
+              {% else %}
+                State
+              {% endif %}
+            </label>
+            <select id="employer_state" name="employer_state" class="form-control">
+              <option selected value="{{profile[25]}}">current({{profile[25]}})</option>
+              {%for state in stateList%}
+                <option>{{state[0]}}</option>
+              {%endfor%}
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label for="employer_Office_telephone_no">
+              {% if(session['langMalay']) == 'malay' %}
+                No telefon pejabat
+              {% else %}
+                Office telephone number
+              {% endif %}
+            </label>
+            <input type="text" value="{{profile[26]}}" required class="form-control" id="employer_Office_telephone_no" name="employer_office_telephone_no">
+          </div>
+        </div>
+  
+        <div class="row mt-3">
+          <div class="col-md-6">
+            <label for="employer_mobile_no">
+              {% if(session['langMalay']) == 'malay' %}
+                No. telefon bimbit
+              {% else %}
+                Mobile no.
+              {% endif %}
+            </label>
+            <input type="text" value="{{profile[27]}}" required class="form-control" id="employer_mobile_no" name="employer_mobile_no">
+          </div>
+          <div class="col-md-6">
+            <label for="employer_fax_number">
+              {% if(session['langMalay']) == 'malay' %}
+                No fax
+              {% else %}
+                Fax number
+              {% endif %}
+            </label>
+            <input type="text" required value="{{profile[28]}}" class="form-control" id="employer_fax_number" name="employer_fax_number">
+          </div>
+        </div>
+  
+        <div class="row mt-3">
+          <div class="col-md-6">
+            <label for="employer_year_of_commence">
+              {% if(session['langMalay']) == 'malay' %}
+                Tarikh mula operasi
+              {% else %}
+                Year of commence
+              {% endif %}
+            </label>
+            <input type="text" required class="form-control" value="{{profile[29]}}" id="employer_year_of_commence" name="employer_year_of_commence">
+          </div>
+          <div class="col-md-6">
+            <label for="employer_sector">
+              {% if(session['langMalay']) == 'malay' %}
+                Sektor
+              {% else %}
+                Sector
+              {% endif %}
+            </label>
+            <select id="employer_sector" name="employer_sector" class="form-control">
+              <option selected value="{{profile[30]}}">current({{profile[30]}})</option>
+              {%for sector in sectorList%}
+                <option>{{sector[0]}}</option>
+              {%endfor%}
+            </select>
+          </div>
+        </div>
+  
+        <div class="row mt-3">
+          <div class="col-md-6">
+            <label for="employer_name_of_person_in_charge">
+              {% if(session['langMalay']) == 'malay' %}
+                Nama pegawai
+              {% else %}
+                Name of person in-charge
+              {% endif %}
+            </label>
+            <input type="text" required value="{{profile[31]}}" class="form-control" id="employer_name_of_person_in_charge" name="employer_name_of_person_in_charge">
+          </div>
+          <div class="col-md-6">
+            <label for="employer_designation">
+              {% if(session['langMalay']) == 'malay' %}
+                Jawatan
+              {% else %}
+                Designation
+              {% endif %}
+            </label>
+            
+            <select id="employer_designation" name="employer_designation" class="form-control">
+              <option selected value="{{profile[32]}}">current({{profile[32]}})</option>
+              {%for designation in designationList%}
+                <option>{{designation[0]}}</option>
+              {%endfor%}
+            </select>
+          </div>
+        </div>
+  
+        <div class="row mt-3">
+          <div class="col-md-6">
+            <label for="employer_PIC_mobile_number">
+              {% if(session['langMalay']) == 'malay' %}
+                Telefon bimbit pegawai
+              {% else %}
+                PIC mobile number
+              {% endif %}
+            </label>
+            <input type="text" value="{{profile[33]}}" required class="form-control" id="employer_PIC_mobile_number" name="employer_pic_mobile_number">
+          </div>
+        </div>
+        
+        <br><br><br>
+        
+        <h5>
+          {% if(session['langMalay']) == 'malay' %}
+            Edit Daftar Lokasi Cawangan
+          {% else %}
+            Edit Register Branch Location
+          {% endif %}
+        </h5>
+        <hr>
+        <div class="row mt-3">
+          <div class="col-md-6">
+            <label for="branch_employment_location_name">
+              {% if(session['langMalay']) == 'malay' %}
+                Nama syarikat
+              {% else %}
+                Employment location name
+              {% endif %}
+            </label>
+            <input type="text" required class="form-control" value="{{profile[34]}}" id="branch_employment_location_name" name="branch_employment_location_name">
+          </div>
+          <div class="col-md-6">
+            <label for="branch_address1">
+              {% if(session['langMalay']) == 'malay' %}
+                Alamat 1
+              {% else %}
+                Address 1
+              {% endif %}
+            </label>
+            <textarea required class="form-control" id="branch_address1" name="branch_address1">{{profile[35]}}</textarea>
+          </div>
+        </div>
+  
+        <div class="row mt-3">
+          <div class="col-md-6">
+            <label for="branch_address2">
+              {% if(session['langMalay']) == 'malay' %}
+                Alamat 2
+              {% else %}
+                Address 2
+              {% endif %}
+            </label>
+            <textarea required class="form-control" id="branch_address2" name="branch_address2">{{profile[36]}}</textarea>
+          </div>
+          <div class="col-md-6">
+            <label for="branch_address3">
+              {% if(session['langMalay']) == 'malay' %}
+                Alamat 3
+              {% else %}
+                Address 3
+              {% endif %}
+            </label>
+            <textarea required class="form-control" id="branch_address3" name="branch_address3">{{profile[37]}}</textarea>
+          </div>
+        </div>
+  
+        <div class="row mt-3">
+          <div class="col-md-6">
+            <label for="branch_postcode">
+              {% if(session['langMalay']) == 'malay' %}
+                Poskod
+              {% else %}
+                Postcode
+              {% endif %}
+            </label>
+            <input type="text" required value="{{profile[38]}}" class="form-control" id="branch_postcode" name="branch_postcode">
+          </div>
+          <div class="col-md-6">
+            <label for="branch_state">
+              {% if(session['langMalay']) == 'malay' %}
+                Bandar
+              {% else %}
+                State
+              {% endif %}
+            </label>
+            <select id="branch_state" name="branch_state" class="form-control">
+              <option selected value="{{profile[39]}}">current({{profile[39]}})</option>
+              {% for state in stateList %}
+                <option>{{state[0]}}</option>
+              {%endfor%}
+            </select>
+          </div>
+        </div>
+  
+        <div class="row mt-3">
+          <div class="col-md-6">
+            <label for="branch_city">
+              {% if(session['langMalay']) == 'malay' %}
+                Negeri
+              {% else %}
+                City
+              {% endif %}
+            </label>
+            <select id="branch_city" name="branch_city" class="form-control">
+              <option selected value="{{profile[40]}}">current({{profile[40]}})</option>
+              {%for city in cityList%}
+                <option>{{city[0]}}</option>
+              {%endfor%}
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label for="branch_office_telephone_number">
+              {% if(session['langMalay']) == 'malay' %}
+                No telefon pejabat
+              {% else %}
+                Office telephone number
+              {% endif %}
+            </label>
+            <input type="text" value="{{profile[41]}}" required class="form-control" id="branch_office_telephone_number" name="branch_office_telephone_number">
+          </div>
+        </div>
+  
+        <div class="row mt-3">
+          <div class="col-md-6">
+            <label for="branch_office_mobile_number">
+              {% if(session['langMalay']) == 'malay' %}
+                No telefon bimbit pejabat
+              {% else %}
+                Office mobile number
+              {% endif %}
+            </label>
+            <input type="text" value="{{profile[42]}}" required class="form-control" id="branch_office_mobile_number" name="branch_office_mobile_number">
+          </div>
+          <div class="col-md-6">
+            <label for="branch_email">
+              {% if(session['langMalay']) == 'malay' %}
+                Emel
+              {% else %}
+                Email
+              {% endif %}
+            </label>
+            <input type="email" value="{{profile[43]}}" class="form-control" id="branch_email" name="branch_email">
+          </div>
+        </div>
+  
+        <div class="row mt-3">
+          <div class="col-md-6">
+            <label for="branch_name_of_person_in_charge">
+              {% if(session['langMalay']) == 'malay' %}
+                Nama pegawai
+              {% else %}
+                Name of person-in charge
+              {% endif %}
+            </label>
+            <input type="text" value="{{profile[44]}}" required class="form-control" id="branch_name_of_person_in_charge" name="branch_name_of_person_in_charge">
+          </div>
+          <div class="col-md-6">
+            <label for="branch_designation">
+              {% if(session['langMalay']) == 'malay' %}
+                Jawatan
+              {% else %}
+                Designation
+              {% endif %}
+            </label>
+            
+            <select id="branch_designation" name="branch_designation" class="form-control">
+              <option selected value="{{profile[45]}}">current({{profile[45]}})</option>
+              {%for designation in designationList%}
+                <option>{{designation[0]}}</option>
+              {%endfor%}
+            </select>
+          </div>
+        </div>
+  
+        <div class="row mt-3">
+          <div class="col-md-6">
+            <label for="branch_PIC_mobile_number">
+              {% if(session['langMalay']) == 'malay' %}
+                No telefon bimbit pegawai
+              {% else %}
+                PIC mobile number
+              {% endif %}
+            </label>
+            <input type="text" value="{{profile[46]}}" required class="form-control" id="branch_PIC_mobile_number" name="branch_pic_mobile_number">
+          </div>
+        </div>
+
+        {% if(session['langMalay']) == 'malay' %}
+          <div class="row mt-3">
+            <div class="col-md-6">
+              <input type="submit" class="form-control bg-dark text-white" id="profile_submit" name="profile_form_data" value="kemas kini profil">
+            </div>
+          </div> 
+        {% else %}
+          <div class="row mt-3">
+            <div class="col-md-6">
+              <input type="submit" class="form-control bg-dark text-white" id="profile_submit" name="profile_form_data" value="Update profile">
+            </div>
+          </div>
+        {% endif %}
+        
+  
+        <br><br>
+  
+          
+        {% endfor %}
+        
+      </form>
+    </div>
+  
+
+  
+    
+  
+
+{% include 'footer.html' %}
+

@@ -1,0 +1,106 @@
+{% include 'admin-header.html' %}
+
+
+{% if session['admin_create_job_sub_sector_status'] == 'success' %}
+  <script>
+    Swal.fire('Job Sub Sector Created Successfully!')
+  </script>
+  <p style="display:none;"> {{ session.pop('admin_create_job_sub_sector_status', None) }} </p>
+{% endif %}
+
+{% if session['admin_create_job_sub_sector_status'] == 'error' %}
+  <script>
+    Swal.fire('Fail!, please try again.')
+  </script>
+  <p style="display:none;"> {{ session.pop('admin_create_job_sub_sector_status', None) }} </p>
+{% endif %}   
+
+
+{% if session['admin_del_job_sub_sector_status'] == 'success' %}
+  <script>
+    Swal.fire('Deleted Successfully!')
+  </script>
+  <p style="display:none;"> {{ session.pop('admin_del_job_sub_sector_status', None) }} </p>
+{% endif %}
+
+
+{% if session['admin_del_job_sub_sector_status'] == 'error' %}
+    <script>
+        Swal.fire('Deletion Fail!')
+    </script>
+    <p style="display:none;"> {{ session.pop('admin_del_job_sub_sector_status', None) }} </p>
+{% endif %}
+
+
+
+<div class="back-button-div">
+  <a href="/admin-dash" class="back-button">Home</a> 
+</div>
+<br>
+<div class="container">
+    <form action="/admin-create-job-sub-sector" method="post" class="mt-5">
+        <div class="row">
+            <div class="col-md-5">
+                <label>Enter New Job Sub Sector</label>
+                <input type="text" name="job_sub_sector" required class="form-control">
+            </div>
+            <div class="col-md-5">
+                <label>Select Job Sector</label>
+                <select name="job_sector" required class="form-control">
+                    {% for jobSector in jobSectorList %}
+                        <option>{{jobSector[0]}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="col-md-2">
+                <label></label>
+                <input type="submit" class="form-control btn btn-primary" value="Create Job Sub Sector">
+            </div>
+        </div>
+    </form>
+    <br><br><br>
+
+    <table id="myTable" class="display">
+      <thead>
+        <tr>
+          <th>
+            {% if(session['langMalay']) == 'malay' %}
+            Sub Sektor Pekerjaan
+            {% else %}
+            Job Sub Sector
+            {% endif %}
+          </th>
+          <th>
+            {% if(session['langMalay']) == 'malay' %}
+            Tindakan
+            {% else %}
+            Action
+            {% endif %}
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for data in dataList %}
+          <tr>
+            <td>{{data[1]}}</td>
+            <td>
+              <a href="/admin-del-job-sub-sector?del={{data[0]}}" class="btn btn-danger">
+                {% if(session['langMalay']) == 'malay' %}
+                Padam
+                {% else %}
+                Delete
+                {% endif %}
+              </a>
+            </td>
+          </tr>
+        {%endfor%}
+      </tbody>
+        
+      </table>
+</div>
+<script>
+    $(document).ready( function () {
+      $('#myTable').DataTable();
+    });
+</script>
+{% include 'admin-footer.html' %}

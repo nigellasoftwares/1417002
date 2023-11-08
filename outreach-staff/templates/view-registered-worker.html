@@ -1,0 +1,254 @@
+{% include 'header.html' %}
+<div class="back-button-div">
+    <a href="/add-worker" class="back-button">Home</a>
+    <a href="/registration-list" class="back-button">Registration List</a>
+</div><br>
+
+<div class="container">
+    <!-- Worker Family Members -->
+    <br><br>
+    {% if(session['langMalay']) == 'malay' %}
+    <h5>Ahli Keluarga Pekerja</h5>
+    {% else %}
+    <h5>Worker Family Members</h5>
+    {% endif %}
+    <hr>
+
+    <div class="row">
+        <div class="col-12">
+            {% if workerFM|length > 0 %}
+            {% for fm in workerFM %}
+                <a href="/view-family-member?fm={{fm[0]}}&fmN={{loop.index}}" class="btn btn-primary">Family Member {{loop.index}}</a>
+            {% endfor %}
+            {% else %}
+            N/A
+            {% endif %}
+        </div>
+   </div>
+    <!--End Row-->
+    
+    <!-- End * Worker Family Members -->
+    
+    <br><br>
+    <hr>
+    <!-- Worker Details -->
+    {% for worker in workerList %}
+        {% if(session['langMalay']) == 'malay' %}
+        <h5>Butiran Pekerja Berdaftar</h5>
+        {% else %}
+        <h5>Registered Worker Details</h5>
+        {% endif %}
+    <hr>
+
+    <div class="row">
+        <div class="col-6">
+            <p><b>Registration No-</b> {{worker[4]}}</p>
+        </div>
+        <div class="col-6">
+            <p><b>Name-</b> {{worker[7]}}</p>
+        </div>
+    </div>
+    <!--End Row-->
+    <div class="row">
+        <div class="col-6">
+            <p><b>No. of Family Members-</b> {{worker[5]}}</p>
+        </div>
+        <div class="col-6">
+            <p><b>Status-</b> {{worker[6]}}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <p><b>Created By-</b> {{worker[2]}}</p>
+        </div>
+        <div class="col-6">
+            <p><b>Created Date and Time-</b> {{worker[3]}} {{workerRegTime}}</p>
+        </div>
+    </div>
+    <!--End Row-->
+    <!--End Row-->
+    <div class="row">
+        <div class="col-6">
+            <p><b>Gender-</b> {{worker[9]}}</p>
+        </div>
+        <div class="col-6">
+            <p>
+                <b>Date of birth-</b>
+                <span id="dobCon"></span>
+                <script>
+                    function formatDate(inputDate) {
+                        let parts = inputDate.split('-');
+                        let year = parts[0];
+                        let month = parts[1];
+                        let day = parts[2];
+                        
+                        let formattedDate = new Date(year, month - 1, day);
+
+                        let formattedDay = String(formattedDate.getDate()).padStart(2, '0');
+                        let formattedMonth = String(formattedDate.getMonth() + 1).padStart(2, '0');
+                        let formattedYear = formattedDate.getFullYear();
+
+                        return formattedDay + '/' + formattedMonth + '/' + formattedYear;
+                    }
+                    let formattedDate = formatDate("{{worker[10]}}");
+                    document.getElementById('dobCon').innerHTML = formattedDate
+                </script>
+            </p>
+        </div>
+    </div>
+    <!--End Row-->
+    <div class="row">
+        <div class="col-6">
+            <p><b>Citizenship-</b> {{worker[12]}}</p>
+        </div>
+        <div class="col-6">
+            <p><b>Marital status-</b> {{worker[13]}}</p>
+        </div>
+    </div>
+    <!--End Row-->
+    <div class="row">
+        <div class="col-6">
+            <p><b>Religion-</b> {{worker[15]}}</p>
+        </div>
+        <div class="col-6">
+            <p><b>Contact No-</b> {{worker[17]}}</p>
+        </div>
+    </div>
+    <!--End Row-->
+    <div class="row">
+        <div class="col-6">
+            <p><b>Address 1-</b> {{worker[25]}}</p>
+        </div>
+        <div class="col-6">
+            <p><b>Address 2-</b> {{worker[26]}}</p>
+        </div>
+    </div>
+    <!--End Row-->
+    <div class="row">
+        <div class="col-6">
+            <p><b>Address 3-</b> {{worker[27]}}</p>
+        </div>
+        <div class="col-6">
+            <p><b>City-</b> {{worker[29]}}</p>
+        </div>
+    </div>
+    <!--End Row-->
+    <div class="row">
+        <div class="col-6">
+            <p><b>State-</b> {{worker[30]}}</p>
+        </div>
+    </div>
+    <!--End Row-->
+   
+    {%endfor%}
+    <!-- End Worker Details -->
+    
+    <!-- Worker Douments Details -->
+    <br><br>
+    <hr>
+    {% if(session['langMalay']) == 'malay' %}
+    <h5>Butiran Dokumen Berdaftar</h5>
+    {% else %}
+    <h5>Registered Document Detail's</h5>
+    {% endif %}
+    <hr>
+    {% if workerDocs|length > 0 %}
+    {% for doc in workerDocs %}
+    <br>
+    <h5><span class="border-bottom">Document {{ loop.index }}</h5>
+    <br>
+
+    <div class="row">
+        <div class="col-6">
+            <img src="{{docsPath}}{{doc[2]}}/uploaded_image.jpg" onerror="this.onerror=null; this.src='./static/img/no-image.png'" id="openImageLink{{loop.index}}" style="width: 50px; height: 50px;">
+        </div>
+
+        <div class="image-overlay" id="imageOverlay{{loop.index}}">
+            <span class="close-button" id="closeButton{{loop.index}}">&times;</span>
+            <div class="image-container">
+                <img src="{{docsPath}}{{doc[2]}}/uploaded_image.jpg" onerror="this.onerror=null; this.src='./static/img/no-image.png'" alt="Image">
+            </div>
+        </div>
+
+        <script>
+            function viewImg (openImageLink_in, imageOverlay_in, closeButton_in){
+                const openImageLink = document.getElementById(openImageLink_in);
+                const imageOverlay = document.getElementById(imageOverlay_in);
+                const closeButton = document.getElementById(closeButton_in);
+
+                openImageLink.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    imageOverlay.style.display = "block";
+                });
+
+                closeButton.addEventListener("click", function () {
+                    imageOverlay.style.display = "none";
+                });
+            }
+
+            viewImg("openImageLink{{loop.index}}", "imageOverlay{{loop.index}}", "closeButton{{loop.index}}");
+        </script>
+    </div>
+    <!-- End Row -->
+    <br>
+    
+    <div class="row">
+        <div class="col-6">
+            <p><b>Type of Document-</b> {{doc[3]}}</p>
+        </div>
+        <div class="col-6">
+            <p><b>Document ID-</b> {{doc[4]}}</p>
+        </div>
+    </div>
+    <!--End Row-->
+    <div class="row">
+        <div class="col-6">
+            <p><b>Place of Issue-</b> {{doc[5]}}</p>
+        </div>
+        <div class="col-6">
+            <p><b>Issue Date-</b>
+            
+                <span id="dobCon2{{loop.index}}"></span>
+                <script>
+                    document.getElementById('dobCon2{{loop.index}}').innerHTML = formatDate("{{doc[6]}}");
+                </script>
+            
+            </p>
+        </div>
+    </div>
+    <!--End Row-->
+    <div class="row">
+        <div class="col-6">
+            <p><b>Expiry Date-</b>
+                <span id="dobCon3{{loop.index}}"></span>
+                <script>
+                    document.getElementById('dobCon3{{loop.index}}').innerHTML = formatDate("{{doc[7]}}");
+                </script>
+            </p>
+        </div>
+        <div class="col-6">
+            <p><b>Issuing Country-</b> {{doc[8]}}</p>
+        </div>
+    </div>
+    <!--End Row-->
+    <div class="row">
+        <div class="col-6">
+            <p><b>Document Status-</b> {{doc[9]}}</p>
+        </div>
+        <div class="col-6">
+            <p><b>Document Current Status-</b> {{doc[10]}}</p>
+        </div>
+    </div>
+    <!--End Row-->
+    <!--End Row-->
+    {% endfor %}
+    {% else %}
+    N/A
+    {% endif %}
+    <!-- End * Worker Douments Details -->
+     
+</div>
+
+
+{% include 'footer.html' %}
+

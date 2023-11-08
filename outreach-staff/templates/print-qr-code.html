@@ -1,0 +1,69 @@
+{% include 'header.html' %}
+
+<div class="back-button-div">
+  <a href="/add-worker" class="back-button">Home</a> 
+</div><br>
+
+<div class="container">
+  {% if(session['langMalay']) == 'malay' %}
+    <h5>Jumlah No. Pekerja : {{totalForm}}</h5>
+  {% else %}
+    <h5>Total Worker No: {{totalForm}}</h5>
+  {% endif %}
+  <br>
+  <table id="myTable" class="display">
+    <thead>
+      <tr>
+        <th>
+          {% if(session['langMalay']) == 'malay' %}
+          Nombor Pendaftaran
+          {% else %}
+          Registration Number
+          {% endif %}
+        </th>
+        <th>
+          {% if(session['langMalay']) == 'malay' %}
+          Nama Pekerja
+          {% else %}
+          Worker Name  
+          {% endif %}
+        </th>
+        <th>
+          {% if(session['langMalay']) == 'malay' %}
+          Status 
+          {% else %}
+          Form Status 
+          {% endif %}
+        </th>
+        <th>
+          {% if(session['langMalay']) == 'malay' %}
+          Maklumat
+          {% else %}
+          Action
+          {% endif %}
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for worker in workerList %}
+      <tr>
+        <td>{{worker[1]}}</td>
+        <td>{{worker[2]}}</td>
+        <td>N/A</td>
+        <td>
+          <a href="/worker-details?wrkr={{worker[0]}}" class="btn btn-secondary"><span class="material-symbols-outlined">visibility</span></a>
+        </td>
+      </tr>
+      {%endfor%}
+    </tbody>
+  </table> 
+</div>
+
+
+{% include 'footer.html' %}
+
+<script>
+  $(document).ready( function () {
+    $('#myTable').DataTable();
+  });
+</script>

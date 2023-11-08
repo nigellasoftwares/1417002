@@ -1,0 +1,155 @@
+{% include 'admin-header.html' %}
+
+{% if(session['admin_registration_list_update']) %}
+  <script>
+    Swal.fire('Worker data updated successfully')
+  </script>
+  <p style="display:none;"> {{ session.pop('admin_registration_list_update', None) }} </p>
+{% endif %}
+
+{% if(session['admin_registration_list_delete']) %}
+  <script>
+    Swal.fire('Worker data deleted successfully')
+  </script>
+  <p style="display:none;"> {{ session.pop('admin_registration_list_delete', None) }} </p>
+{% endif %}
+
+<div class="back-button-div">
+  <a href="/admin-dash" class="back-button">Home</a> 
+</div>
+<br>
+<div class="container">
+  {% if(session['langMalay']) == 'malay' %}
+  <h5>Jumlah Laporan- {{totalForm}}</h5>
+  {% else %}
+  <h5>Total Form- {{totalForm}}</h5>
+  {% endif %}
+    
+    <br>
+    <table id="myTable" class="display">
+      <thead>
+        <tr>
+          <th>
+            {% if(session['langMalay']) == 'malay' %}
+            Nombor pendaftaran
+            {% else %}
+            Registration No
+            {% endif %}
+          </th>
+          <th>
+            {% if(session['langMalay']) == 'malay' %}
+            Nama Pekerja
+            {% else %}
+            Workers Name
+            {% endif %}
+          </th>
+          <th>
+            {% if(session['langMalay']) == 'malay' %}
+            Tindakan
+            {% else %}
+            Action
+            {% endif %}
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for worker in workerList %}
+          <tr>
+            <td>{{worker[1]}}</td>
+            <td>{{worker[2]}}</td>
+            <td>
+              <!--
+              <a href="/admin-download-excel-file?file={{worker[0]|int}}" class="btn btn-secondary">
+                {% if(session['langMalay']) == 'malay' %}
+                Eksport ke Excel
+                {% else %}
+                Export to Excel
+                {% endif %}
+              </a>
+              -->
+              <a href="/admin-view-registered-worker?view-regWor={{worker[0]}}" class="btn btn-primary">
+                {% if(session['langMalay']) == 'malay' %}
+                Lihat
+                {% else %}
+                View
+                {% endif %}
+              </a>
+              <!--
+              <a href="/admin-edit-registered-worker?view-regWor={{worker[0]}}" class="btn btn-secondary">
+                {% if(session['langMalay']) == 'malay' %}
+                Sunting
+                {% else %}
+                Edit
+                {% endif %}
+              </a>
+              -->
+            </td>
+          </tr>
+        {%endfor%}
+      </tbody>
+        
+      </table>
+</div>
+<script>
+  $(document).ready( function () {
+    $('#myTable').DataTable();
+  });
+
+  // Export All Data 
+  $('#exportAll').hide()
+  $(document).ready( function () {
+    $('#checkAll').change(function(){
+      if ($(this).prop('checked')) {
+        $('#exportAll').show()
+        // select All
+        const checkboxes = document.getElementsByName('worker');
+        checkboxes.forEach(checkbox => {
+          checkbox.checked = true;
+        });
+        // End select all
+      } else {
+        $('#exportAll').hide()
+        // unselect All
+        const checkboxes = document.getElementsByName('worker');
+        checkboxes.forEach(checkbox => {
+          checkbox.checked = false;
+        });
+        // End unselect all 
+      }
+    });
+
+    // Export All function
+    $('#exportAll').click(function(){
+        window.location = '/admin-download-excel-file?file=exportAll'
+    });
+
+    // Get selected
+    $('#selectedExport').hide()
+    $('input[name="worker"]').click(function(){
+        $('#selectedExport').show()
+        const checkboxes = document.getElementsByName('worker');
+        const selectedWorkers = [];
+
+        checkboxes.forEach(checkbox => {
+            if (checkbox.checked) {
+                selectedWorkers.push(checkbox.value);
+            }
+        });
+
+        $('#selectedExport').click(function(){
+            //const jsonArray = JSON.stringify(selectedWorkers);
+            //console.log(jsonArray);
+            window.location = '/admin-download-excel-file?file="'+selectedWorkers+'"' 
+        });
+
+      workerLength = selectedWorkers.length
+      if(workerLength == 0){
+        $('#selectedExport').hide()
+      }
+    })
+    // End Get selected
+  });
+  // End Export All 
+</script>
+
+{% include 'admin-footer.html' %}

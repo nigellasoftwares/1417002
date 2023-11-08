@@ -1,0 +1,361 @@
+{% include 'header.html' %}
+<div class="back-button-div">
+    <a href="/add-worker" class="back-button">Home</a>
+    <a href="/my-registration-list" class="back-button">Registration List</a>
+    <a href="/view-registered-worker1?view-regWor={{wori}}" class="back-button">Worker</a>
+</div><br>
+
+<div class="container">
+    
+    <br>
+    <!-- Worker Details -->
+    {% for fm in fmData %}
+        {% if(session['langMalay']) == 'malay' %}
+        <h5>Butiran Ahli Keluarga <a href="/user-print-new-qr?w_reg_num={{fm[4]}}-{{fmN}}&w_name={{fm[7]}}"><img src="static/img/qr-code.png" style="width: 30px; height: 30px; float: right;"></a></h5>
+        {% else %}
+        <h5>Family Member Details <a href="/user-print-new-qr?w_reg_num={{fm[4]}}-{{fmN}}&w_name={{fm[7]}}"><img src="static/img/qr-code.png" style="width: 30px; height: 30px; float: right;"></a></h5>
+        {% endif %}
+    <hr>
+    <div class="row">
+        <div class="col-6">
+            <p><b>Registration No-</b> {{worReN}}-{{fmN}}</p>
+        </div>
+        <div class="col-6">
+            <p><b>Name-</b> {{fm[7]}}</p>
+        </div>
+    </div>
+    <!--End Row-->
+    <div class="row">
+        <div class="col-6">
+            <p><b>RelationShip-</b> {{fm[6]}}</p>
+        </div>
+        <div class="col-6">
+            <p><b>Family Name-</b> {{fm[8]}}</p>
+        </div>
+    </div>
+    <!--End Row-->
+    <div class="row">
+        <div class="col-6">
+            <p><b>Created By-</b> {{fm[1]}}</p>
+        </div>
+        <div class="col-6">
+            <p><b>Created Date-</b> {{fm[2]}}</p>
+        </div>
+    </div>
+    <!--End Row-->
+    <div class="row">
+        <div class="col-6">
+            <p><b>Family Together-</b> {{fm[9]}}</p>
+        </div>
+        <div class="col-6">
+            <p><b>Point of Entry-</b> {{fm[10]}}</p>
+        </div>
+    </div>
+    <!--End Row-->
+    <div class="row">
+        <div class="col-6">
+            <p><b>Gender-</b> {{fm[14]}}</p>
+        </div>
+        <div class="col-6">
+            <p><b>Marital Status-</b> {{fm[13]}}</p>
+        </div>
+    </div>
+    <!--End Row-->
+    <div class="row">
+        <div class="col-6">
+            <p><b>Citizenship-</b> {{fm[11]}}</p>
+        </div>
+        <div class="col-6">
+            <p><b>Religion-</b> {{fm[12]}}</p>
+        </div>
+    </div>
+    <!--End Row-->
+    <div class="row">
+        <div class="col-6">
+            <p><b>Address 1-</b> {{fm[15]}}</p>
+        </div>
+        <div class="col-6">
+            <p><b>Address 2-</b> {{fm[16]}}</p>
+        </div>
+    </div>
+    <!--End Row-->
+    <div class="row">
+        <div class="col-6">
+            <p><b>Address 3-</b> {{fm[17]}}</p>
+        </div>
+        <div class="col-6">
+            <p><b>Postcode-</b> {{fm[18]}}</p>
+        </div>
+    </div>
+    <!--End Row-->
+    <div class="row">
+        <div class="col-6">
+            <p><b>City-</b> {{fm[19]}}</p>
+        </div>
+        <div class="col-6">
+            <p><b>State-</b> {{fm[20]}}</p>
+        </div>
+    </div>
+    <!--End Row-->
+    <div class="row">
+        <div class="col-6">
+            <p><b>Contact No.-</b> {{fm[21]}}</p>
+        </div>
+        <div class="col-6">
+            <p><b>Race-</b> {{fm[22]}}</p>
+        </div>
+    </div>
+    <!--End Row-->
+    <div class="row">
+        <div class="col-6">
+            <p><b>Place of Birth-</b> {{fm[23]}}</p>
+        </div>
+        <div class="col-6">
+            <p><b>Employee Status-</b> {{fm[24]}}</p>
+        </div>
+    </div>
+    <!--End Row-->
+    <div class="row">
+        <div class="col-6">
+            <p><b>Employee Name-</b> {{fm[25]}}</p>
+        </div>
+        <div class="col-6">
+            <p><b>Employee Address-</b> {{fm[26]}}</p>
+        </div>
+    </div>
+    <!--End Row-->
+
+    <!-- Family Member Doument Details -->
+    <br><br>
+    <hr>
+    {% if(session['langMalay']) == 'malay' %}
+    <h5>Butiran Dokumen Ahli Keluarga</h5>
+    {% else %}
+    <h5>Family Member Document Detail's</h5>
+    {% endif %}
+    <hr>
+    <br>
+    <h5><span class="border-bottom">Document 1</h5>
+    <br>
+
+    <div class="row">
+        <div class="col-6">
+            <img src="{{docsPath}}doc1/uploaded_image.jpg" onerror="this.onerror=null; this.src='./static/img/no-image.png'" id="openImageLink1" style="width: 50px; height: 50px;">
+        </div>
+
+        <div class="image-overlay" id="imageOverlay1">
+            <span class="close-button" id="closeButton1">&times;</span>
+            <div class="image-container">
+                <img src="{{docsPath}}doc1/uploaded_image.jpg" onerror="this.onerror=null; this.src='./static/img/no-image.png'" alt="Image">
+            </div>
+        </div>
+
+        <script>
+            function viewImg (openImageLink_in, imageOverlay_in, closeButton_in){
+                const openImageLink = document.getElementById(openImageLink_in);
+                const imageOverlay = document.getElementById(imageOverlay_in);
+                const closeButton = document.getElementById(closeButton_in);
+
+                openImageLink.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    imageOverlay.style.display = "block";
+                });
+
+                closeButton.addEventListener("click", function () {
+                    imageOverlay.style.display = "none";
+                });
+            }
+
+            viewImg("openImageLink1", "imageOverlay1", "closeButton1");
+        </script>
+    </div>
+    <!-- End Row -->
+    <br>
+
+    <div class="row">
+        <div class="col-6">
+            <p><b>Type of Document-</b> {{fm[30]}}</p>
+        </div>
+        <div class="col-6">
+            <p><b>Document ID-</b> {{fm[31]}}</p>
+        </div>
+    </div>
+    <!--End Row-->
+    <div class="row">
+        <div class="col-6">
+            <p><b>Place of Issue-</b> {{fm[32]}}</p>
+        </div>
+        <div class="col-6">
+            <p><b>Issue Date-</b> {{fm[33]}}</p>
+        </div>
+    </div>
+    <!--End Row-->
+    <div class="row">
+        <div class="col-6">
+            <p><b>Expiry Date-</b> {{fm[34]}}</p>
+        </div>
+        <div class="col-6">
+            <p><b>Issuing Country-</b> {{fm[35]}}</p>
+        </div>
+    </div>
+    <!--End Row-->
+    <div class="row">
+        <div class="col-6">
+            <p><b>Document Status-</b> {{fm[36]}}</p>
+        </div>
+        <div class="col-6">
+            <p><b>Document Current Status-</b> {{fm[37]}}</p>
+        </div>
+    </div>
+    <!--End Row-->
+
+    <br>
+    <h5><span class="border-bottom">Document 2</h5>
+    <br>
+    <div class="row">
+        <div class="col-6">
+            <img src="{{docsPath}}doc2/uploaded_image.jpg" onerror="this.onerror=null; this.src='./static/img/no-image.png'" id="openImageLink2" style="width: 50px; height: 50px;">
+        </div>
+
+        <div class="image-overlay" id="imageOverlay2">
+            <span class="close-button" id="closeButton2">&times;</span>
+            <div class="image-container">
+                <img src="{{docsPath}}doc2/uploaded_image.jpg" onerror="this.onerror=null; this.src='./static/img/no-image.png'" alt="Image">
+            </div>
+        </div>
+
+        <script>
+            function viewImg (openImageLink_in, imageOverlay_in, closeButton_in){
+                const openImageLink = document.getElementById(openImageLink_in);
+                const imageOverlay = document.getElementById(imageOverlay_in);
+                const closeButton = document.getElementById(closeButton_in);
+
+                openImageLink.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    imageOverlay.style.display = "block";
+                });
+
+                closeButton.addEventListener("click", function () {
+                    imageOverlay.style.display = "none";
+                });
+            }
+
+            viewImg("openImageLink2", "imageOverlay2", "closeButton2");
+        </script>
+    </div>
+    <!-- End Row -->
+    <br>
+    <div class="row">
+        <div class="col-6">
+            <p><b>Type of Document-</b> {{fm[38]}}</p>
+        </div>
+        <div class="col-6">
+            <p><b>Document ID-</b> {{fm[39]}}</p>
+        </div>
+    </div>
+    <!--End Row-->
+    <div class="row">
+        <div class="col-6">
+            <p><b>Place of Issue-</b> {{fm[40]}}</p>
+        </div>
+        <div class="col-6">
+            <p><b>Issue Date-</b> {{fm[41]}}</p>
+        </div>
+    </div>
+    <!--End Row-->
+    <div class="row">
+        <div class="col-6">
+            <p><b>Expiry Date-</b> {{fm[42]}}</p>
+        </div>
+        <div class="col-6">
+            <p><b>Issuing Country-</b> {{fm[43]}}</p>
+        </div>
+    </div>
+    <!--End Row-->
+    <div class="row">
+        <div class="col-6">
+            <p><b>Document Status-</b> {{fm[44]}}</p>
+        </div>
+        <div class="col-6">
+            <p><b>Document Current Status-</b> {{fm[45]}}</p>
+        </div>
+    </div>
+    <!--End Row-->
+    <!-- End * Family Member Document Details -->
+
+    
+    {%endfor%}
+    <!-- End Family Member Details -->
+
+
+    <!-- FM BioData -->
+    <br><br>
+    <hr>
+    {% if(session['langMalay']) == 'malay' %}
+    <h5>Biodata Ahli Keluarga</h5>
+    {% else %}
+    <h5>Family Member Biodata</h5>
+    {% endif %}
+    <hr>
+
+    {% if fmBiodata|length > 0 %}
+        {% for data in fmBiodata %}
+            <!-- Response Data -->
+            <div class="row border bg-secondary rounded border-dark p-3 mt-5" id="getBioContainer">
+                <div class="col-md-4">
+                    <h6 class="text-center text-white"><span class="border rounded p-2">Photo</span></h6>
+                    <span class="border rounded bg-white border-dark m-3" style="width: 100%; height: 450px; display: inline-block;">
+                        <img src="data:image/png;base64,{{data[3]}}" style="width: 100%; height: 100%;" onerror="this.onerror=null; this.src='./static/img/no-image.png'">
+                    </span>
+                </div>
+                <div class="col-md-8" style="margin-left: auto; margin-right: auto;">
+                    <h6 class="text-center text-white"><span class="border rounded p-2">Fingerprints</span></h6>
+                    <div class="row text-center">
+                        <span class="border rounded bg-white border-dark m-3 p-2" style="width: 120px; height: 120px; display: inline-block;">
+                            <img src="data:image/png;base64,{{data[5]}}" onerror="this.onerror=null; this.src='./static/img/no-image.png'" alt="Image" style="width: 100%; height: 100%;">
+                        </span>
+                        <span class="border rounded bg-white border-dark m-3 p-2" style="width: 120px; height: 120px; display: inline-block;">
+                            <img src="data:image/png;base64,{{data[7]}}" onerror="this.onerror=null; this.src='./static/img/no-image.png'" alt="Image" style="width: 100%; height: 100%;">
+                        </span>
+                        <span class="border rounded bg-white border-dark m-3 p-2" style="width: 120px; height: 120px; display: inline-block;">
+                            <img src="data:image/png;base64,{{data[9]}}" onerror="this.onerror=null; this.src='./static/img/no-image.png'" alt="Image" style="width: 100%; height: 100%;">
+                        </span>
+                        <span class="border rounded bg-white border-dark m-3 p-2" style="width: 120px; height: 120px; display: inline-block;">
+                            <img src="data:image/png;base64,{{data[11]}}" onerror="this.onerror=null; this.src='./static/img/no-image.png'" alt="Image" style="width: 100%; height: 100%;">
+                        </span>
+                        <span class="border rounded bg-white border-dark m-3 p-2" style="width: 120px; height: 120px; display: inline-block;">
+                            <img src="data:image/png;base64,{{data[13]}}" onerror="this.onerror=null; this.src='./static/img/no-image.png'" alt="Image" style="width: 100%; height: 100%;">
+                        </span>
+                        <span class="border rounded bg-white border-dark m-3 p-2" style="width: 120px; height: 120px; display: inline-block;">
+                            <img src="data:image/png;base64,{{data[15]}}" onerror="this.onerror=null; this.src='./static/img/no-image.png'" alt="Image" style="width: 100%; height: 100%;">
+                        </span>
+                        <span class="border rounded bg-white border-dark m-3 p-2" style="width: 120px; height: 120px; display: inline-block;">
+                            <img src="data:image/png;base64,{{data[17]}}" onerror="this.onerror=null; this.src='./static/img/no-image.png'" alt="Image" style="width: 100%; height: 100%;">
+                        </span>
+                        <span class="border rounded bg-white border-dark m-3 p-2" style="width: 120px; height: 120px; display: inline-block;">
+                            <img src="data:image/png;base64,{{data[19]}}" onerror="this.onerror=null; this.src='./static/img/no-image.png'" alt="Image" style="width: 100%; height: 100%;">
+                        </span>
+                        <span class="border rounded bg-white border-dark m-3 p-2" style="width: 120px; height: 120px; display: inline-block;">
+                            <img src="data:image/png;base64,{{data[21]}}" onerror="this.onerror=null; this.src='./static/img/no-image.png'" alt="Image" style="width: 100%; height: 100%;">
+                        </span>
+                        <span class="border rounded bg-white border-dark m-3 p-2" style="width: 120px; height: 120px; display: inline-block;">
+                            <img src="data:image/png;base64,{{data[23]}}" onerror="this.onerror=null; this.src='./static/img/no-image.png'" alt="Image" style="width: 100%; height: 100%;">
+                        </span>    
+                    </div>
+                </div>
+            </div>
+            <!-- End Response -->      
+        {% endfor %}
+    {% else %}
+    N/A
+    {% endif %}
+    <!-- End * FM BioData -->
+
+
+
+
+</div>
+<!-- End Container -->
+
+{% include 'footer.html' %}
+

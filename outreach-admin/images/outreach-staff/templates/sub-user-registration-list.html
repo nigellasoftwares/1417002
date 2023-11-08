@@ -1,0 +1,166 @@
+{% include 'sub-user-header.html' %}
+
+{% if(session['sub_user_registration_list_update']) %}
+  <script>
+    Swal.fire('Worker data updated successfully')
+  </script>
+  <p style="display:none;"> {{ session.pop('sub_user_registration_list_update', None) }} </p>
+{% endif %}
+
+{% if(session['sub_user_registration_list_delete']) %}
+  <script>
+    Swal.fire('Worker data deleted successfully')
+  </script>
+  <p style="display:none;"> {{ session.pop('sub_user_registration_list_delete', None) }} </p>
+{% endif %}
+
+<div class="back-button-div">
+  <a href="/sub-user-add-worker" class="back-button">Home</a> 
+</div>
+<br>
+<div class="container">
+  {% if(session['langMalay']) == 'malay' %}
+  <h5>Jumlah Laporan- {{totalForm}}</h5>
+  {% else %}
+  <h5>Total Form- {{totalForm}}</h5>
+  {% endif %}
+    
+    <br>
+    <table id="myTable" class="display">
+      <thead>
+        <tr>
+          <th>
+            <input type="checkbox" id="checkAll"> 
+            {% if(session['langMalay']) == 'malay' %}
+              Pilih
+            {% else %}
+              Select
+            {% endif %} 
+            <button id="exportAll" class="btn btn-dark">
+              {% if(session['langMalay']) == 'malay' %}
+              Eksport Semua
+              {% else %}
+              Export All
+              {% endif %}
+            </button>
+            <button id="selectedExport" class="btn btn-dark">
+              {% if(session['langMalay']) == 'malay' %}
+              Eksport
+              {% else %}
+              Export
+              {% endif %}
+            </button>
+          </th>
+          <th>
+            {% if(session['langMalay']) == 'malay' %}
+            ID Laporan
+            {% else %}
+            Form ID
+            {% endif %}
+          </th>
+          <th>
+            {% if(session['langMalay']) == 'malay' %}
+            Nama Pekerja
+            {% else %}
+            Workers Name
+            {% endif %}
+          </th>
+          <th>
+            {% if(session['langMalay']) == 'malay' %}
+            Tindakan
+            {% else %}
+            Action
+            {% endif %}
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for worker in workerList %}
+          <tr>
+            <td><input type="checkbox"  value="{{worker[0]}}" name="worker"></td>
+            <td>{{worker[1]}}</td>
+            <td>{{worker[2]}}</td>
+            <td>
+              <a href="/sub-user-download-excel-file?file={{worker[0]}}" class="btn btn-secondary">
+                {% if(session['langMalay']) == 'malay' %}
+                Eksport ke Excel
+                {% else %}
+                Export to Excel
+                {% endif %}
+              </a>
+              <a href="/sub-user-view-registered-worker?view-regWor={{worker[0]}}" class="btn btn-primary">View</a>
+              <a href="/sub-user-edit-registered-worker?view-regWor={{worker[0]}}" class="btn btn-secondary">Edit</a>
+              <a href="/sub-user-del-registered-worker?del={{worker[0]}}" class="btn btn-danger">Delete</a>
+            </td>
+          </tr>
+        {%endfor%}
+      </tbody>
+        
+    </table>
+</div>
+<script>
+  $(document).ready( function () {
+    $('#myTable').DataTable();
+  });
+
+  // Export All Data 
+  $('#exportAll').hide()
+  $(document).ready( function () {
+    /*
+    $('#checkAll').change(function(){
+      if ($(this).prop('checked')) {
+        $('#exportAll').show()
+        // select All
+        const checkboxes = document.getElementsByName('worker');
+        checkboxes.forEach(checkbox => {
+          checkbox.checked = true;
+        });
+        // End select all
+      } else {
+        $('#exportAll').hide()
+        // unselect All
+        const checkboxes = document.getElementsByName('worker');
+        checkboxes.forEach(checkbox => {
+          checkbox.checked = false;
+        });
+        // End unselect all 
+      }
+    });
+    // Export All function
+    $('#exportAll').click(function(){
+      window.location = '/sub-user-download-excel-file?file=exportAll'
+    });
+    */
+
+
+    // Get selected
+    $('#selectedExport').hide()
+    $('input[name="worker"]').click(function(){
+      $('#selectedExport').show()
+      const checkboxes = document.getElementsByName('worker');
+      const selectedWorkers = [];
+
+      checkboxes.forEach(checkbox => {
+        if (checkbox.checked) {
+          selectedWorkers.push(checkbox.value);
+        }
+      });
+
+      $('#selectedExport').click(function(){
+        // Convert the array to JSON string
+        //const jsonArray = JSON.stringify(selectedWorkers);
+        //alert(jsonArray);
+        window.location = '/sub-user-download-excel-file?file="'+selectedWorkers+'"'
+      });
+
+      workerLength = selectedWorkers.length
+      if(workerLength == 0){
+        $('#selectedExport').hide()
+      }
+    })
+    // End Get selected
+  });
+  // End Export All 
+</script>
+
+{% include 'sub-user-footer.html' %}

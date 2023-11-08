@@ -1,0 +1,52 @@
+{% include 'sub-admin-header.html' %} 
+
+<!-- page Container -->
+<div class="container" id="profile_div">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6 border rounded p-5 m-5">
+            <h4 class="text-center mt-2">Edit Exe User</h4>
+            <hr>
+            <br>
+            <form action="/sub-admin-update-exe-users" method="post">
+                {% for user in userList %}
+                <row class="row">
+                    <div class="col-md-12">
+                        <label>Name</label>
+                        <input type="hidden" name="userID" value="{{user[0]}}">
+                        <input type="text" class="form-control" value="{{user[1]}}" disabled>
+                    </div>
+                </row>
+                <row class="row mt-3">
+                    <div class="col-md-12">
+                        <label>E-mail</label>
+                        <input type="email" class="form-control" value="{{user[2]}}" disabled>
+                    </div>
+                </row>
+                <row class="row mt-3">
+                    <div class="col-md-12">
+                        <label>Password</label>
+                        <input type="text" class="form-control" name="user_password" value="{{user[3]}}" required>
+                    </div>
+                </row>
+                <row class="row mt-3">
+                    <div class="col-md-12">
+                        <label>Worker Registration Prefix</label>
+                        <input type="text" class="form-control" value="{{user[4]}}" disabled>
+                    </div>
+                </row>
+                <row class="row mt-5">
+                    <div class="col-md-12">
+                        <button type="submit" class="form-control btn btn-dark">Submit</button>
+                    </div>
+                </row>
+                {% endfor %}
+            </form>
+            <br><br>
+        </div>
+    </div>
+</div>
+<!-- End Page Container -->
+
+{% include 'sub-admin-footer.html' %}
+

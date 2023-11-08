@@ -1,0 +1,233 @@
+{% include 'admin-header.html' %}
+<div class="back-button-div">
+    <a href="/admin-dash" class="back-button">Home</a>
+    <a href="/admin-registration-list" class="back-button">Registration List</a>
+</div><br>
+
+<div class="container">
+    
+    <br>
+    <!-- Worker Details -->
+    {% for fm in fmData %}
+        {% if(session['langMalay']) == 'malay' %}
+        <h5>Butiran Ahli Keluarga</h5>
+        {% else %}
+        <h5>Family Member Details</h5>
+        {% endif %}
+    <hr>
+    <form action="/admin-update-family-member" method="post">
+        <div class="row">
+            <div class="col-6">
+                <input type="hidden" name="fm_id" value="{{fm[0]}}">
+                <p><b>Registration No-</b> <input type="text" value="{{fm[4]}}" disabled></p>
+            </div>
+            <div class="col-6">
+                <p><b>Name-</b> <input type="text" name="fm_name" value="{{fm[7]}}"></p>
+            </div>
+        </div>
+        <!--End Row-->
+        <div class="row">
+            <div class="col-6">
+                <p><b>RelationShip-</b> <input type="text" name="fm_relationship" value="{{fm[6]}}"></p>
+            </div>
+            <div class="col-6">
+                <p><b>Family Name-</b> <input type="text" name="fm_family_name" value="{{fm[8]}}"></p>
+            </div>
+        </div>
+        <!--End Row-->
+        <div class="row">
+            <div class="col-6">
+                <p><b>Created By-</b> <input type="text" value="{{fm[1]}}" disabled></p>
+            </div>
+            <div class="col-6">
+                <p><b>Created Date-</b> <input type="text" value="{{fm[2]}}" disabled></p>
+            </div>
+        </div>
+        <!--End Row-->
+        <div class="row">
+            <div class="col-6">
+                <p><b>Family Together-</b> <input type="text" name="family_together" value="{{fm[9]}}"></p>
+            </div>
+            <div class="col-6">
+                <p><b>Point of Entry-</b> <input type="text" name="poe" value="{{fm[10]}}"></p>
+            </div>
+        </div>
+        <!--End Row-->
+        <div class="row">
+            <div class="col-6">
+                <p><b>Gender-</b> <input type="text" name="gender" value="{{fm[14]}}"></p>
+            </div>
+            <div class="col-6">
+                <p><b>Marital Status-</b> <input type="text" name="marital_status" value="{{fm[13]}}"></p>
+            </div>
+        </div>
+        <!--End Row-->
+        <div class="row">
+            <div class="col-6">
+                <p><b>Citizenship-</b> <input type="text" name="citizenship" value="{{fm[11]}}"></p>
+            </div>
+            <div class="col-6">
+                <p><b>Religion-</b> <input type="text" name="religion" value="{{fm[12]}}"></p>
+            </div>
+        </div>
+        <!--End Row-->
+        <div class="row">
+            <div class="col-6">
+                <p><b>Address 1-</b> <input type="text" name="address1" value="{{fm[15]}}"></p>
+            </div>
+            <div class="col-6">
+                <p><b>Address 2-</b> <input type="text" name="address2" value="{{fm[16]}}"></p>
+            </div>
+        </div>
+        <!--End Row-->
+        <div class="row">
+            <div class="col-6">
+                <p><b>Address 3-</b> <input type="text" name="address3" value="{{fm[17]}}"></p>
+            </div>
+            <div class="col-6">
+                <p><b>Postcode-</b> <input type="text" name="postcode" value="{{fm[18]}}"></p>
+            </div>
+        </div>
+        <!--End Row-->
+        <div class="row">
+            <div class="col-6">
+                <p><b>City-</b> <input type="text" name="city" value="{{fm[19]}}"></p>
+            </div>
+            <div class="col-6">
+                <p><b>State-</b> <input type="text" name="state" value="{{fm[20]}}"></p>
+            </div>
+        </div>
+        <!--End Row-->
+        <div class="row">
+            <div class="col-6">
+                <p><b>Contact No.-</b> <input type="text" name="contact_no" value="{{fm[21]}}"></p>
+            </div>
+            <div class="col-6">
+                <p><b>Race-</b> <input type="text" name="race" value="{{fm[22]}}"></p>
+            </div>
+        </div>
+        <!--End Row-->
+        <div class="row">
+            <div class="col-6">
+                <p><b>Place of Birth-</b> <input type="text" name="place_of_birth" value="{{fm[23]}}"></p>
+            </div>
+            <div class="col-6">
+                <p><b>Employee Status-</b> <input type="text" name="employee_status" value="{{fm[24]}}"></p>
+            </div>
+        </div>
+        <!--End Row-->
+        <div class="row">
+            <div class="col-6">
+                <p><b>Employee Name-</b> <input type="text" name="employee_name" value="{{fm[25]}}"></p>
+            </div>
+            <div class="col-6">
+                <p><b>Employee Address-</b> <input type="text" name="employee_address" value="{{fm[26]}}"></p>
+            </div>
+        </div>
+        <!--End Row-->
+
+        <!-- Family Member Doument Details -->
+        <br><br>
+        <hr>
+        {% if(session['langMalay']) == 'malay' %}
+        <h5>Butiran Dokumen Ahli Keluarga</h5>
+        {% else %}
+        <h5>Family Member Document Detail's</h5>
+        {% endif %}
+        <hr>
+        <br>
+        <h5><span class="border-bottom">Document 1</h5>
+        <br>
+        <div class="row">
+            <div class="col-6">
+                <p><b>Type of Document-</b> <input type="text" name="type_of_document1" value="{{fm[30]}}"></p>
+            </div>
+            <div class="col-6">
+                <p><b>Document ID-</b> <input type="text" name="document_id1" value="{{fm[31]}}"></p>
+            </div>
+        </div>
+        <!--End Row-->
+        <div class="row">
+            <div class="col-6">
+                <p><b>Place of Issue-</b> <input type="text" name="place_of_issue1" value="{{fm[32]}}"></p>
+            </div>
+            <div class="col-6">
+                <p><b>Issue Date-</b> <input type="text" name="issue_date1" value="{{fm[33]}}"></p>
+            </div>
+        </div>
+        <!--End Row-->
+        <div class="row">
+            <div class="col-6">
+                <p><b>Expiry Date-</b> <input type="text" name="expiry_date1" value="{{fm[34]}}"></p>
+            </div>
+            <div class="col-6">
+                <p><b>Issuing Country-</b> <input type="text" name="issuing_country1" value="{{fm[35]}}"></p>
+            </div>
+        </div>
+        <!--End Row-->
+        <div class="row">
+            <div class="col-6">
+                <p><b>Document Status-</b> <input type="text" name="document_status1" value="{{fm[36]}}"></p>
+            </div>
+            <div class="col-6">
+                <p><b>Document Current Status-</b> <input type="text" name="document_current_status1" value="{{fm[37]}}"></p>
+            </div>
+        </div>
+        <!--End Row-->
+
+        <br>
+        <h5><span class="border-bottom">Document 2</h5>
+        <br>
+        <div class="row">
+            <div class="col-6">
+                <p><b>Type of Document-</b> <input type="text" name="type_of_document2" value="{{fm[38]}}"></p>
+            </div>
+            <div class="col-6">
+                <p><b>Document ID-</b> <input type="text" name="document_id2" value="{{fm[39]}}"></p>
+            </div>
+        </div>
+        <!--End Row-->
+        <div class="row">
+            <div class="col-6">
+                <p><b>Place of Issue-</b> <input type="text" name="place_of_issue2" value="{{fm[40]}}"></p>
+            </div>
+            <div class="col-6">
+                <p><b>Issue Date-</b> <input type="text" name="issue_date2" value="{{fm[41]}}"></p>
+            </div>
+        </div>
+        <!--End Row-->
+        <div class="row">
+            <div class="col-6">
+                <p><b>Expiry Date-</b> <input type="text" name="expiry_date2" value="{{fm[42]}}"></p>
+            </div>
+            <div class="col-6">
+                <p><b>Issuing Country-</b> <input type="text" name="issuing_country2" value="{{fm[43]}}"></p>
+            </div>
+        </div>
+        <!--End Row-->
+        <div class="row">
+            <div class="col-6">
+                <p><b>Document Status-</b> <input type="text" name="document_status2" value="{{fm[44]}}"></p>
+            </div>
+            <div class="col-6">
+                <p><b>Document Current Status-</b> <input type="text" name="document_current_status2" value="{{fm[45]}}"></p>
+            </div>
+        </div>
+        <!--End Row-->
+        <br>
+        <div class="row">
+            <div class="col-6">
+                <button type="submit" class="btn btn-primary">Update Family Member Details</button>
+            </div>
+        </div>
+        <!--End Row-->
+        <!-- End * Family Member Document Details -->
+    </form>
+    
+    {%endfor%}
+    <!-- End Family Member Details -->
+</div>
+
+
+{% include 'admin-footer.html' %}
+

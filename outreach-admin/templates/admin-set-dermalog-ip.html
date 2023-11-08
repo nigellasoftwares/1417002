@@ -1,0 +1,86 @@
+{% include 'admin-header.html' %}
+
+<!-- page Container -->
+<div class="container" id="profile_div">
+
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-5 border rounded p-5 m-5" style="background-color: #E3E7EC;">
+            <div class="row">
+                <div class="col-md-10" style="background-color: #fff; margin: 1cm; padding: 1cm; border-radius: 10px; text-align: center;">
+                    <h5><span>Set Dermalog IP <hr></span></h5>
+
+                    <form action="/admin-insert-set-dermalog-ip" method="post" enctype="multipart/form-data">
+                        <row class="row mt-3">
+                            <div class="col-md-12">
+                                <label style="float: left;">Enter Dermalog IP</label>
+                                <input type="text" class="form-control" name="dermalog_ip" required>
+                            </div>
+                        </row>
+
+                        <p class="mt-2">
+                            <span id="dermalog_online" style="display:none;"> <img src="static/img/success.png" style="width: 25px;"> Connected</span>
+                        </p>
+                        <p class="mt-2">
+                            <span id="dermalog_offline" style="display:none;"><img src="static/img/error.png" style="width: 25px;"> Not connected</span>
+                        </p>
+
+
+                        <row class="row mt-2">
+                            <div class="col-md-12">
+                                <button type="submit" class="form-control btn btn-primary" onclick="checkConnectivity()">Submit</button>
+                            </div>
+                        </row>
+                    </form>
+                     <!-- Add the text below the submit button -->
+                     <p>Current I.P is {{dermalog_ip}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- End Page Container -->
+
+{% include 'admin-footer.html' %}
+
+<script>
+    let previousStatus = null;  // Initialize the previous status as null
+
+    function dermalogStatus() {
+        const dermalog_online = $('#dermalog_online');
+        const dermalog_offline = $('#dermalog_offline');
+
+        let data = {
+            server_ip: '{{ dermalog_ip }}'
+        };
+
+        $.ajax({
+            type: "POST",
+            url: '/fetch-dermalog-server-status',
+            data: JSON.stringify(data),
+            contentType: "application/json",
+            success: function(result) {
+                let status = result.status;
+
+                // Check if the status has changed
+                if (status !== previousStatus) {
+                    previousStatus = status;  // Update the previous status
+
+                    if (status === 'error') {
+                        dermalog_online.hide();
+                        dermalog_offline.show();
+                    } else if (status === 'success') {
+                        dermalog_online.show();
+                        dermalog_offline.hide();
+                    }
+                }
+            }
+        });
+    }
+
+    dermalogStatus();
+    setInterval(dermalogStatus, 2000);
+</script>
+
+

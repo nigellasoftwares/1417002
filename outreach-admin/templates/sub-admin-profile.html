@@ -1,0 +1,113 @@
+{% include 'sub-admin-header.html' %} 
+
+
+{% if session['sub_admin_update_status'] == 'success' %}
+  <script>
+    Swal.fire('Updated Successfully!')
+  </script>
+  <p style="display:none;"> {{ session.pop('sub_admin_update_status', None) }} </p>
+{% endif %}
+
+{% if session['sub_admin_update_status'] == 'error' %}
+  <script>
+    Swal.fire('Updation Fail!, please try again.')
+  </script>
+  <p style="display:none;"> {{ session.pop('sub_admin_update_status', None) }} </p>
+{% endif %} 
+
+
+<!-- page Container -->
+<div class="container" id="profile_div">
+    <div class="row" id="view_profile_container">
+        <div class="col-md-3"></div>
+        <div class="col-md-5 border rounded p-5 m-5" style="background-color: #E3E7EC;">
+            <div class="row">
+                <div class="col-md-10" style="background-color: #fff; margin: 1cm; padding: 1cm; border-radius: 10px; text-align: center;">
+                    {% for profile in profileData %}
+                        
+                        {% if profile[7] %}
+                        <img src="{{profile[7]}}" style="width: 150px; height: 150px; border-radius: 50%;" class="border">
+                        {% else %}
+                        <img src="./static/img/subAdmin/blank_profile.jpg" style="width: 150px; height: 150px; border-radius: 50%;" class="border">
+                        {% endif %}
+                        
+                        <h6 class="mt-5">{{profile[1]}} </h6>
+                        <h6>{{profile[2]}} </h6>
+                        <h6>{{profile[3]}} </h6>
+                        <button class="btn btn-success mt-5" id="edit_admin_profile_btn">Edit Profile</button>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" id="edit_profile_container" style="display: none;">
+        <div class="col-md-3"></div>
+        <div class="col-md-5 border rounded p-5 m-5" style="background-color: #E3E7EC;">
+            <div class="row" id="view_profile_container">
+                <div class="col-md-10" style="background-color: #fff; margin: 1cm; padding: 1cm; border-radius: 10px; text-align: center;">
+                    <h5><span>Edit Profile <hr></span></h5>
+                    {% for profile in profileData %}
+                    <form action="/sub-admin-update-profile" method="post" enctype="multipart/form-data">
+                        <row class="row">
+                            <div class="col-md-12">
+                                <label style="float: left;">Profile</label>
+                                <input type="file" class="form-control" name="profile" accept="image/*" required>
+                            </div>
+                        </row>
+                        <row class="row mt-3">
+                            <div class="col-md-12">
+                                <label style="float: left;">Name</label>
+                                <input type="hidden" name="userID" value="{{profile[0]}}">
+                                <input type="text" class="form-control" name="name" value="{{profile[1]}}" required>
+                            </div>
+                        </row>
+                        <row class="row mt-3">
+                            <div class="col-md-12">
+                                <label style="float: left;">E-mail</label>
+                                <input type="email" class="form-control" name="email" value="{{profile[2]}}" required>
+                            </div>
+                        </row>
+                        <row class="row mt-3">
+                            <div class="col-md-12">
+                                <label style="float: left;">Password</label>
+                                <input type="text" class="form-control" name="password" value="{{profile[3]}}" required>
+                            </div>
+                        </row>
+                        
+                        <row class="row mt-5">
+                            <div class="col-md-6">
+                                <button type="submit" class="form-control btn btn-primary">Update</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button class="form-control btn btn-danger" id="cancel_profile">Cancel</button>
+                            </div>
+                        </row>
+                    </form>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- End Page Container -->
+
+<script>
+    $(document).ready(function(){
+        // Show Edit Box
+        $('#edit_admin_profile_btn').click(function(){
+            $('#view_profile_container').hide();
+            $('#edit_profile_container').show();
+        })
+
+        // Show View Box
+        $('#cancel_profile').click(function(){
+            $('#edit_profile_container').hide();
+            $('#view_profile_container').show();
+        })
+    })
+</script>
+
+{% include 'sub-admin-footer.html' %}
+

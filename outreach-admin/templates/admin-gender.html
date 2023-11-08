@@ -1,0 +1,96 @@
+{% include 'admin-header.html' %}
+
+
+{% if session['admin_create_gender_status'] == 'success' %}
+  <script>
+    Swal.fire('Gender Created Successfully!')
+  </script>
+  <p style="display:none;"> {{ session.pop('admin_create_gender_status', None) }} </p>
+{% endif %}
+
+{% if session['admin_create_gender_status'] == 'error' %}
+  <script>
+    Swal.fire('Fail!, please try again.')
+  </script>
+  <p style="display:none;"> {{ session.pop('admin_create_gender_status', None) }} </p>
+{% endif %}   
+
+
+{% if session['admin_del_gender_status'] == 'success' %}
+  <script>
+    Swal.fire('Deleted Successfully!')
+  </script>
+  <p style="display:none;"> {{ session.pop('admin_del_gender_status', None) }} </p>
+{% endif %}
+
+
+{% if session['admin_del_gender_status'] == 'error' %}
+    <script>
+        Swal.fire('Deletion Fail!')
+    </script>
+    <p style="display:none;"> {{ session.pop('admin_del_gender_status', None) }} </p>
+{% endif %}
+
+
+
+<div class="back-button-div">
+  <a href="/admin-dash" class="back-button">Home</a> 
+</div>
+<br>
+<div class="container">
+    <form action="/admin-create-gender" method="post" class="mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <input type="text" name="gender" required class="form-control" placeholder="Enter Gender">
+            </div>
+            <div class="col-md-6">
+                <input type="submit" class="form-control btn btn-primary" value="Create Gender">
+            </div>
+        </div>
+    </form>
+    <br><br><br>
+
+    <table id="myTable" class="display">
+      <thead>
+        <tr>
+          <th>
+            {% if(session['langMalay']) == 'malay' %}
+            Jantina
+            {% else %}
+            Gender
+            {% endif %}
+          </th>
+          <th>
+            {% if(session['langMalay']) == 'malay' %}
+            Tindakan
+            {% else %}
+            Action
+            {% endif %}
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for data in dataList %}
+          <tr>
+            <td>{{data[1]}}</td>
+            <td>
+              <a href="/admin-del-gender?del={{data[0]}}" class="btn btn-danger">
+                {% if(session['langMalay']) == 'malay' %}
+                Padam
+                {% else %}
+                Delete
+                {% endif %}
+              </a>
+            </td>
+          </tr>
+        {%endfor%}
+      </tbody>
+        
+      </table>
+</div>
+<script>
+    $(document).ready( function () {
+      $('#myTable').DataTable();
+    });
+</script>
+{% include 'admin-footer.html' %}

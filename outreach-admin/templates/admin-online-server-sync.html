@@ -1,0 +1,238 @@
+{% include 'admin-header.html' %}
+
+{% if session['admin_pull_data'] == 'success' %}
+  <script>
+    Swal.fire('Data Pulled successfully')
+  </script>
+  <p style="display:none;"> {{ session.pop('admin_pull_data', None) }} </p>
+{% endif %}
+
+{% if session['admin_pull_data'] == 'error' %}
+  <script>
+    Swal.fire('Data Pull fail')
+  </script>
+  <p style="display:none;"> {{ session.pop('admin_pull_data', None) }} </p>
+{% endif %}
+
+<div class="back-button-div">
+    <a href="/admin-dash" class="back-button">Home</a> 
+</div>
+    
+
+<div class="container">
+    <div class="row mt-5">
+        <h5 class="text-center">Pull Data</h5 class="text-center">
+        <br>
+    </div>
+    <!--
+    <button class="btn btn-primary" onclick="syncData()">Sync</button>
+    <div class="progress-container mt-5 text-center">
+        <img src="../static/img/icon-upload.gif">
+        <progress id="progressBar" max="100" value="0"></progress>
+        <div id="progressLabel">0%</div>
+    </div>
+    -->
+    <br><br>
+
+    <!-- Change Server
+    <form>
+        <div class="row">
+            <div class="col-md-6">
+                <input type="text" name="server_address" placeholder="Enter the Server Address" class="form-control" required>
+                <input type="submit" value="Change Server" class="btn btn-primary mt-3">
+            </div>
+        </div>    
+    </form>
+    <br>
+    End * Change Server-->
+
+    <!-- Server Status -->
+    <div class="row">
+        <div class="col-md-6">
+            <h6 style="display: inline;">
+                <p id="statOn" style="display: none;">
+                    <b>Status: </b> <span class="text-success" style="display: inline; margin-right: 5px;"> 
+                        <span style="display: inline-block; width: 10px; height: 10px; background-color: rgb(12, 189, 56); border-radius: 50%; margin-left: 20px;"></span> online
+                    </span>
+                </p> 
+                <p id="statOff" style="display: none;">
+                    <b>Status: </b> <span class="text-danger" style="display: inline; margin-right: 5px;"> 
+                        <span style="display: inline-block; width: 10px; height: 10px; background-color: rgb(243, 9, 9); border-radius: 50%; margin-left: 20px;"></span> offline
+                    </span>
+                </p>
+            </h6>              
+        </div>
+    </div>    
+    <br>
+    <!-- End * Server Status-->
+
+    <!-- Pull Data -->
+    <div class="row" id="pullData" style="display: none;">
+        <table id="myTable" class="display">
+            <thead>
+            <tr>
+                <th>
+                {% if(session['langMalay']) == 'malay' %}
+                Sektor
+                {% else %}
+                Company Name
+                {% endif %}
+                </th>
+                <th>
+                {% if(session['langMalay']) == 'malay' %}
+                Tindakan
+                {% else %}
+                Select Plantation
+                {% endif %}
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+                {% for data in company_ls %}
+                <tr>
+                <td>{{data[0]}}</td>
+                <td>  
+                    </a>
+                    <input type="checkbox" value="{{data[0]}}" class="plantationBox">
+                </td>
+                </tr>
+                {%endfor%}
+            </tbody>
+        </table>
+       
+        <form action="/admin-pull-data" method="post">
+            <div class="col-md-6 mt-5">
+                <input type="date" class="form-control" name="target_date" required oninput="checkInputs()">
+        
+                <input type="hidden" id="allPlantation" name="selected_plantation" class="form-control mt-2" required>
+        
+                <button type="submit" id="submitBtn" class="btn btn-primary mt-2" disabled>Pull Data</button>
+            </div>
+        </form>
+        
+        <script>
+            function checkInputs() {
+                const targetDate = document.querySelector('input[name="target_date"]').value;
+                const selectedPlantation = document.querySelector('input[name="selected_plantation"]').value;
+        
+                const submitButton = document.getElementById('submitBtn');
+        
+                if (targetDate && selectedPlantation) {
+                    submitButton.removeAttribute('disabled');
+                } else {
+                    submitButton.setAttribute('disabled', 'true');
+                }
+            }
+        </script>
+        
+           
+    </div>    
+    <br>
+
+     
+    
+    
+
+    <script>
+        const selectedPlantation = [];
+
+        const checkboxes = document.querySelectorAll('.plantationBox');
+        checkboxes.forEach((checkbox) => {
+            checkbox.addEventListener('change', (event) => {
+                const item = event.target.value;
+                if (event.target.checked) {
+                    selectedPlantation.push(item);
+                    
+                } else {
+                    const index = selectedPlantation.indexOf(item);
+                    if (index > -1) {
+                        selectedPlantation.splice(index, 1);
+                    }
+                }
+                // show value
+                const resultDiv = document.getElementById('allPlantation');
+                //resultDiv.value = selectedPlantation
+                resultDiv.value = JSON.stringify(selectedPlantation)
+
+                // check
+                if (selectedPlantation.length >= 1){
+                    checkInputs();
+                }else{
+                    const submitButton2 = document.getElementById('submitBtn');
+                    submitButton2.setAttribute('disabled', 'true');
+                }
+                
+            });
+        });
+    </script>
+
+        
+    <!-- End * Pull Data-->
+    
+</div>
+
+
+
+
+
+
+
+<script>
+    $(document).ready( function () {
+      $('#myTable').DataTable();
+    });
+</script>
+    
+<script>
+    $(".progress-container").hide();
+    function updateProgress(value) {
+        const progressBar = document.getElementById('progressBar');
+        const progressLabel = document.getElementById('progressLabel');
+        
+        progressBar.value = value;
+        progressLabel.textContent = value + '%';
+    }
+    
+    // Simulate dynamic progress  
+    function syncData(){
+        $(".progress-container").show();
+        let progressValue = 0;
+        const interval = setInterval(function() {
+            progressValue += Math.random() * 10;
+            if (progressValue >= 100) {
+                clearInterval(interval);
+                progressValue = 100;
+            }
+            updateProgress(progressValue.toFixed(2));
+        }, 500);
+    }
+</script>
+<script>
+    $(document).ready(function(){
+        var statOn = $('#statOn')
+        var statOff = $('#statOff')
+        var pullData = $('#pullData')
+        //statOn.hide()
+        //statOff.hide()
+        function checkConnection() {
+            $.ajax({
+                url: "/check-connection",
+                success: function(result) {
+                let status = result;
+                if(status == 'online'){
+                    statOn.show();
+                    statOff.hide();
+                    pullData.show()
+                }else if(status == 'offline') {
+                    statOn.hide();
+                    statOff.show();
+                    pullData.hide()
+                } 
+                }
+            })
+        }
+        setInterval(checkConnection, 1000);
+    })
+</script>
+
+{% include 'admin-footer.html' %}

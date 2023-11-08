@@ -1,0 +1,45 @@
+{% include 'header.html' %} 
+
+
+
+<!-- page Container -->
+<div class="container" id="profile_div">
+    <div class="row" id="view_profile_container">
+        <div class="col-md-3"></div>
+        <div class="col-md-5 border rounded p-5 m-5" style="background-color: #E3E7EC;">
+            <div class="row">
+                <div class="col-md-10" style="background-color: #fff; margin: 1cm; padding: 1cm; border-radius: 10px; text-align: center;">
+               
+                  <img src="./static/img/admin/blank_profile.jpg" style="width: 150px; height: 150px; border-radius: 50%;" class="border">
+                  
+                  
+                  <h6 class="mt-5"><span style="float:left; font-size:13px;"><b>Name</b>: {{name}} </span> </h6><br>
+                  <h6><span style="float:left; font-size:13px;"><b>Username</b>: {{email}}</span></h6><br>
+                  <h6><span style="float:left; font-size:13px;"><b>Password</b>: {{password}}</span></h6><br>
+                 
+                       
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Page Container -->
+
+<script>
+    $(document).ready(function(){
+        // Show Edit Box
+        $('#edit_admin_profile_btn').click(function(){
+            $('#view_profile_container').hide();
+            $('#edit_profile_container').show();
+        })
+
+        // Show View Box
+        $('#cancel_profile').click(function(){
+            $('#edit_profile_container').hide();
+            $('#view_profile_container').show();
+        })
+    })
+</script>
+
+{% include 'footer.html' %}
+

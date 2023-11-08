@@ -1,0 +1,96 @@
+{% include 'admin-header.html' %}
+
+
+{% if session['admin_create_religion_status'] == 'success' %}
+  <script>
+    Swal.fire('Religion Created Successfully!')
+  </script>
+  <p style="display:none;"> {{ session.pop('admin_create_religion_status', None) }} </p>
+{% endif %}
+
+{% if session['admin_create_religion_status'] == 'error' %}
+  <script>
+    Swal.fire('Fail!, please try again.')
+  </script>
+  <p style="display:none;"> {{ session.pop('admin_create_religion_status', None) }} </p>
+{% endif %}   
+
+
+{% if session['admin_del_religion_status'] == 'success' %}
+  <script>
+    Swal.fire('Deleted Successfully!')
+  </script>
+  <p style="display:none;"> {{ session.pop('admin_del_religion_status', None) }} </p>
+{% endif %}
+
+
+{% if session['admin_del_religion_status'] == 'error' %}
+    <script>
+        Swal.fire('Deletion Fail!')
+    </script>
+    <p style="display:none;"> {{ session.pop('admin_del_religion_status', None) }} </p>
+{% endif %}
+
+
+
+<div class="back-button-div">
+  <a href="/admin-dash" class="back-button">Home</a> 
+</div>
+<br>
+<div class="container">
+    <form action="/admin-create-religion" method="post" class="mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <input type="text" name="religion" required class="form-control" placeholder="Enter Religion">
+            </div>
+            <div class="col-md-6">
+                <input type="submit" class="form-control btn btn-primary" value="Create Religion">
+            </div>
+        </div>
+    </form>
+    <br><br><br>
+
+    <table id="myTable" class="display">
+      <thead>
+        <tr>
+          <th>
+            {% if(session['langMalay']) == 'malay' %}
+            Agama
+            {% else %}
+            Religion
+            {% endif %}
+          </th>
+          <th>
+            {% if(session['langMalay']) == 'malay' %}
+            Tindakan
+            {% else %}
+            Action
+            {% endif %}
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for data in dataList %}
+          <tr>
+            <td>{{data[1]}}</td>
+            <td>
+              <a href="/admin-del-religion?del={{data[0]}}" class="btn btn-danger">
+                {% if(session['langMalay']) == 'malay' %}
+                Padam
+                {% else %}
+                Delete
+                {% endif %}
+              </a>
+            </td>
+          </tr>
+        {%endfor%}
+      </tbody>
+        
+      </table>
+</div>
+<script>
+    $(document).ready( function () {
+      $('#myTable').DataTable();
+    });
+</script>
+{% include 'admin-footer.html' %}

@@ -1,0 +1,68 @@
+{% include 'header.html' %}
+<div class="back-button-div">
+    <a href="/add-worker" class="back-button">Home</a>
+    <a href="/my-subusers-list" class="back-button">Sub Users</a>
+</div><br>
+
+<div class="container registration-log">
+    <div class="innerReg"> 
+        <div class="row p-2">
+            <div class="col-md-1"> </div>
+            <div class="col-md-3 border rounded p-2 m-3 regCard">
+                {% if(session['langMalay']) == 'malay' %}
+                    <h4 class="regFont">Jumlah Pendaftaran Pada Hari Ini</h4>
+                {% else %}
+                    <h4 class="regFont">Total Registration No. For The Day</h4>
+                {% endif %} 
+                <h4>{{regNumber}}</h4>
+            </div>
+            <div class="col-md-3 border rounded p-2 m-3 regCard">
+                {% if(session['langMalay']) == 'malay' %}
+                    <h4 class="regFont">Jumlah Ahli Keluarga yang Telah Didaftar</h4>
+                {% else %}
+                    <h4 class="regFont">Total Family Member Registration</h4>
+                {% endif %}
+                <h4>{{memberReg}}</h4>
+            </div>
+            <div class="col-md-3 border rounded p-2 m-3 regCard">
+                {% if(session['langMalay']) == 'malay' %}
+                    <h4 class="regFont">Jumlah Pekerja yang Telah Didaftar</h4>
+                {% else %}
+                <h4 class="regFont">Total Worker Register</h4>
+                {% endif %}
+                <h4>{{totalWorker}}</h4>
+            </div>
+        </div>
+        <!-- End Row -->
+        <div class="row p-2">
+            <div class="col-md-1"> </div>
+            <div class="col-md-3 border rounded p-2 m-3 regCard">
+                {% if(session['langMalay']) == 'malay' %}
+                    <h4 class="regFont">Jumlah Keseluruhan untuk Seminggu</h4>
+                {% else %}
+                    <h4 class="regFont">Grand Total for Whole Week</h4>
+                {% endif %}
+                <h4>{{grandTotal}}</h4>
+            </div>
+            <div class="col-md-3 border rounded p-2 m-3 regCard">
+                {% if(session['langMalay']) == 'malay' %}
+                    <h4 class="regFont">Jumlah Pekerja Tidak Sah</h4>
+                {% else %}
+                    <h4 class="regFont">Total Number of Illegal</h4>
+                {% endif %}
+                <h4>{{totalIllegal}}</h4>
+            </div>
+            <div class="col-md-3 border rounded p-2 m-3 regCard">
+                {% if(session['langMalay']) == 'malay' %}
+                    <h4 class="regFont">Jumlah Pekerja Sah</h4>
+                {% else %}
+                    <h4 class="regFont">Total Number of Legal</h4>
+                {% endif %}
+                <h4>{{totalLegal}}</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% include 'footer.html' %}

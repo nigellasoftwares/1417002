@@ -1,0 +1,1945 @@
+('C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+ 'Oct2023\\outreach-admin\\dist\\app.exe',
+ False,
+ False,
+ False,
+ ['C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+  'Oct2023\\outreach-admin\\logo.ico'],
+ None,
+ False,
+ False,
+ b'<?xml version="1.0" encoding="UTF-8" standalone="yes"?>\n<assembly xmlns='
+ b'"urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">\n  <trustInfo x'
+ b'mlns="urn:schemas-microsoft-com:asm.v3">\n    <security>\n      <requested'
+ b'Privileges>\n        <requestedExecutionLevel level="asInvoker" uiAccess='
+ b'"false"/>\n      </requestedPrivileges>\n    </security>\n  </trustInfo>\n  '
+ b'<compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">\n    <'
+ b'application>\n      <supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f'
+ b'0}"/>\n      <supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>\n '
+ b'     <supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}"/>\n      <s'
+ b'upportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}"/>\n      <supporte'
+ b'dOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}"/>\n    </application>\n  <'
+ b'/compatibility>\n  <application xmlns="urn:schemas-microsoft-com:asm.v3">'
+ b'\n    <windowsSettings>\n      <longPathAware xmlns="http://schemas.micros'
+ b'oft.com/SMI/2016/WindowsSettings">true</longPathAware>\n    </windowsSett'
+ b'ings>\n  </application>\n  <dependency>\n    <dependentAssembly>\n      <ass'
+ b'emblyIdentity type="win32" name="Microsoft.Windows.Common-Controls" version='
+ b'"6.0.0.0" processorArchitecture="*" publicKeyToken="6595b64144ccf1df" langua'
+ b'ge="*"/>\n    </dependentAssembly>\n  </dependency>\n</assembly>',
+ True,
+ False,
+ None,
+ None,
+ None,
+ 'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+ 'Oct2023\\outreach-admin\\build\\app\\app.pkg',
+ [('pyi-contents-directory _internal', '', 'OPTION'),
+  ('PYZ-00.pyz',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\build\\app\\PYZ-00.pyz',
+   'PYZ'),
+  ('struct',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\build\\app\\localpycs\\struct.pyc',
+   'PYMODULE'),
+  ('pyimod01_archive',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\build\\app\\localpycs\\pyimod01_archive.pyc',
+   'PYMODULE'),
+  ('pyimod02_importers',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\build\\app\\localpycs\\pyimod02_importers.pyc',
+   'PYMODULE'),
+  ('pyimod03_ctypes',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\build\\app\\localpycs\\pyimod03_ctypes.pyc',
+   'PYMODULE'),
+  ('pyimod04_pywin32',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\build\\app\\localpycs\\pyimod04_pywin32.pyc',
+   'PYMODULE'),
+  ('pyiboot01_bootstrap',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyInstaller\\loader\\pyiboot01_bootstrap.py',
+   'PYSOURCE'),
+  ('pyi_rth_inspect',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_inspect.py',
+   'PYSOURCE'),
+  ('pyi_rth_pkgutil',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_pkgutil.py',
+   'PYSOURCE'),
+  ('pyi_rth_multiprocessing',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_multiprocessing.py',
+   'PYSOURCE'),
+  ('pyi_rth_setuptools',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_setuptools.py',
+   'PYSOURCE'),
+  ('pyi_rth_pkgres',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_pkgres.py',
+   'PYSOURCE'),
+  ('pyi_rth_win32comgenpy',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_win32comgenpy.py',
+   'PYSOURCE'),
+  ('pyi_rth_pywintypes',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\hooks\\rthooks\\pyi_rth_pywintypes.py',
+   'PYSOURCE'),
+  ('pyi_rth_pythoncom',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\hooks\\rthooks\\pyi_rth_pythoncom.py',
+   'PYSOURCE'),
+  ('pyi_rth_pyqt5',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_pyqt5.py',
+   'PYSOURCE'),
+  ('app',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 Oct2023\\outreach-admin\\app.py',
+   'PYSOURCE'),
+  ('webview\\lib\\runtimes\\win-arm64\\native\\WebView2Loader.dll',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\webview\\lib\\runtimes\\win-arm64\\native\\WebView2Loader.dll',
+   'BINARY'),
+  ('webview\\lib\\WebBrowserInterop.x86.dll',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\webview\\lib\\WebBrowserInterop.x86.dll',
+   'BINARY'),
+  ('webview\\lib\\Microsoft.Web.WebView2.Core.dll',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\webview\\lib\\Microsoft.Web.WebView2.Core.dll',
+   'BINARY'),
+  ('webview\\lib\\runtimes\\win-x86\\native\\WebView2Loader.dll',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\webview\\lib\\runtimes\\win-x86\\native\\WebView2Loader.dll',
+   'BINARY'),
+  ('webview\\lib\\WebBrowserInterop.x64.dll',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\webview\\lib\\WebBrowserInterop.x64.dll',
+   'BINARY'),
+  ('webview\\lib\\Microsoft.Web.WebView2.WinForms.dll',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\webview\\lib\\Microsoft.Web.WebView2.WinForms.dll',
+   'BINARY'),
+  ('webview\\lib\\runtimes\\win-x64\\native\\WebView2Loader.dll',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\webview\\lib\\runtimes\\win-x64\\native\\WebView2Loader.dll',
+   'BINARY'),
+  ('python39.dll',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\python39.dll',
+   'BINARY'),
+  ('pythonnet\\runtime\\Python.Runtime.dll',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\pythonnet\\runtime\\Python.Runtime.dll',
+   'BINARY'),
+  ('clr_loader\\ffi\\dlls\\amd64\\ClrLoader.dll',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\clr_loader\\ffi\\dlls\\amd64\\ClrLoader.dll',
+   'BINARY'),
+  ('clr_loader\\ffi\\dlls\\x86\\ClrLoader.dll',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\clr_loader\\ffi\\dlls\\x86\\ClrLoader.dll',
+   'BINARY'),
+  ('pywin32_system32\\pywintypes39.dll',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\pywin32_system32\\pywintypes39.dll',
+   'BINARY'),
+  ('pywin32_system32\\pythoncom39.dll',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\pywin32_system32\\pythoncom39.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\bin\\libeay32.dll',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\libeay32.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\bin\\libcrypto-1_1-x64.dll',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\libcrypto-1_1-x64.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\plugins\\bearer\\qgenericbearer.dll',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\plugins\\bearer\\qgenericbearer.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\bin\\libssl-1_1-x64.dll',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\libssl-1_1-x64.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\bin\\ssleay32.dll',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\ssleay32.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\bin\\d3dcompiler_47.dll',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\d3dcompiler_47.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\bin\\libGLESv2.dll',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\libGLESv2.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\bin\\libEGL.dll',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\libEGL.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\bin\\opengl32sw.dll',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\opengl32sw.dll',
+   'BINARY'),
+  ('_ctypes.pyd',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\DLLs\\_ctypes.pyd',
+   'EXTENSION'),
+  ('win32\\win32trace.pyd',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\win32\\win32trace.pyd',
+   'EXTENSION'),
+  ('Pythonwin\\win32ui.pyd',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\Pythonwin\\win32ui.pyd',
+   'EXTENSION'),
+  ('_lzma.pyd',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\DLLs\\_lzma.pyd',
+   'EXTENSION'),
+  ('_bz2.pyd',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\DLLs\\_bz2.pyd',
+   'EXTENSION'),
+  ('unicodedata.pyd',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\DLLs\\unicodedata.pyd',
+   'EXTENSION'),
+  ('win32\\_win32sysloader.pyd',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\win32\\_win32sysloader.pyd',
+   'EXTENSION'),
+  ('win32\\win32api.pyd',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\win32\\win32api.pyd',
+   'EXTENSION'),
+  ('_hashlib.pyd',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\DLLs\\_hashlib.pyd',
+   'EXTENSION'),
+  ('_uuid.pyd',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\DLLs\\_uuid.pyd',
+   'EXTENSION'),
+  ('select.pyd',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\DLLs\\select.pyd',
+   'EXTENSION'),
+  ('_ssl.pyd',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\DLLs\\_ssl.pyd',
+   'EXTENSION'),
+  ('win32com\\shell\\shell.pyd',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\win32comext\\shell\\shell.pyd',
+   'EXTENSION'),
+  ('pyexpat.pyd',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\DLLs\\pyexpat.pyd',
+   'EXTENSION'),
+  ('_queue.pyd',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\DLLs\\_queue.pyd',
+   'EXTENSION'),
+  ('_multiprocessing.pyd',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\DLLs\\_multiprocessing.pyd',
+   'EXTENSION'),
+  ('_decimal.pyd',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\DLLs\\_decimal.pyd',
+   'EXTENSION'),
+  ('_cffi_backend.cp39-win_amd64.pyd',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\_cffi_backend.cp39-win_amd64.pyd',
+   'EXTENSION'),
+  ('_elementtree.pyd',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\DLLs\\_elementtree.pyd',
+   'EXTENSION'),
+  ('PyQt5\\QtNetwork.pyd',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\QtNetwork.pyd',
+   'EXTENSION'),
+  ('PyQt5\\QtCore.pyd',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\QtCore.pyd',
+   'EXTENSION'),
+  ('PyQt5\\sip.cp39-win_amd64.pyd',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\sip.cp39-win_amd64.pyd',
+   'EXTENSION'),
+  ('markupsafe\\_speedups.cp39-win_amd64.pyd',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\markupsafe\\_speedups.cp39-win_amd64.pyd',
+   'EXTENSION'),
+  ('_overlapped.pyd',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\DLLs\\_overlapped.pyd',
+   'EXTENSION'),
+  ('_asyncio.pyd',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\DLLs\\_asyncio.pyd',
+   'EXTENSION'),
+  ('zope\\interface\\_zope_interface_coptimizations.cp39-win_amd64.pyd',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\zope\\interface\\_zope_interface_coptimizations.cp39-win_amd64.pyd',
+   'EXTENSION'),
+  ('greenlet\\_greenlet.cp39-win_amd64.pyd',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\greenlet\\_greenlet.cp39-win_amd64.pyd',
+   'EXTENSION'),
+  ('_socket.pyd',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\DLLs\\_socket.pyd',
+   'EXTENSION'),
+  ('gevent\\libuv\\_corecffi.pyd',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\gevent\\libuv\\_corecffi.pyd',
+   'EXTENSION'),
+  ('gevent\\libev\\corecext.cp39-win_amd64.pyd',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\gevent\\libev\\corecext.cp39-win_amd64.pyd',
+   'EXTENSION'),
+  ('gevent\\_gevent_cqueue.cp39-win_amd64.pyd',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\gevent\\_gevent_cqueue.cp39-win_amd64.pyd',
+   'EXTENSION'),
+  ('gevent\\_gevent_clocal.cp39-win_amd64.pyd',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\gevent\\_gevent_clocal.cp39-win_amd64.pyd',
+   'EXTENSION'),
+  ('gevent\\_gevent_cgreenlet.cp39-win_amd64.pyd',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\gevent\\_gevent_cgreenlet.cp39-win_amd64.pyd',
+   'EXTENSION'),
+  ('gevent\\_gevent_cevent.cp39-win_amd64.pyd',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\gevent\\_gevent_cevent.cp39-win_amd64.pyd',
+   'EXTENSION'),
+  ('gevent\\_gevent_c_waiter.cp39-win_amd64.pyd',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\gevent\\_gevent_c_waiter.cp39-win_amd64.pyd',
+   'EXTENSION'),
+  ('gevent\\_gevent_c_tracer.cp39-win_amd64.pyd',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\gevent\\_gevent_c_tracer.cp39-win_amd64.pyd',
+   'EXTENSION'),
+  ('gevent\\_gevent_c_semaphore.cp39-win_amd64.pyd',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\gevent\\_gevent_c_semaphore.cp39-win_amd64.pyd',
+   'EXTENSION'),
+  ('gevent\\_gevent_c_imap.cp39-win_amd64.pyd',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\gevent\\_gevent_c_imap.cp39-win_amd64.pyd',
+   'EXTENSION'),
+  ('gevent\\_gevent_c_ident.cp39-win_amd64.pyd',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\gevent\\_gevent_c_ident.cp39-win_amd64.pyd',
+   'EXTENSION'),
+  ('gevent\\_gevent_c_hub_primitives.cp39-win_amd64.pyd',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\gevent\\_gevent_c_hub_primitives.cp39-win_amd64.pyd',
+   'EXTENSION'),
+  ('gevent\\_gevent_c_hub_local.cp39-win_amd64.pyd',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\gevent\\_gevent_c_hub_local.cp39-win_amd64.pyd',
+   'EXTENSION'),
+  ('gevent\\_gevent_c_greenlet_primitives.cp39-win_amd64.pyd',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\gevent\\_gevent_c_greenlet_primitives.cp39-win_amd64.pyd',
+   'EXTENSION'),
+  ('gevent\\_gevent_c_abstract_linkable.cp39-win_amd64.pyd',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\gevent\\_gevent_c_abstract_linkable.cp39-win_amd64.pyd',
+   'EXTENSION'),
+  ('PIL\\_imagingft.cp39-win_amd64.pyd',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PIL\\_imagingft.cp39-win_amd64.pyd',
+   'EXTENSION'),
+  ('PIL\\_webp.cp39-win_amd64.pyd',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PIL\\_webp.cp39-win_amd64.pyd',
+   'EXTENSION'),
+  ('PIL\\_imagingtk.cp39-win_amd64.pyd',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PIL\\_imagingtk.cp39-win_amd64.pyd',
+   'EXTENSION'),
+  ('PIL\\_imagingcms.cp39-win_amd64.pyd',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PIL\\_imagingcms.cp39-win_amd64.pyd',
+   'EXTENSION'),
+  ('PIL\\_imaging.cp39-win_amd64.pyd',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PIL\\_imaging.cp39-win_amd64.pyd',
+   'EXTENSION'),
+  ('_sqlite3.pyd',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\DLLs\\_sqlite3.pyd',
+   'EXTENSION'),
+  ('charset_normalizer\\md__mypyc.cp39-win_amd64.pyd',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\charset_normalizer\\md__mypyc.cp39-win_amd64.pyd',
+   'EXTENSION'),
+  ('charset_normalizer\\md.cp39-win_amd64.pyd',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\charset_normalizer\\md.cp39-win_amd64.pyd',
+   'EXTENSION'),
+  ('VCRUNTIME140.dll',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\VCRUNTIME140.dll',
+   'BINARY'),
+  ('VCRUNTIME140_1.dll',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\VCRUNTIME140_1.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\bin\\VCRUNTIME140.dll',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\VCRUNTIME140.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\bin\\Qt5Network.dll',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\bin\\Qt5Network.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\bin\\Qt5Core.dll',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\bin\\Qt5Core.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\bin\\VCRUNTIME140_1.dll',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\VCRUNTIME140_1.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\bin\\MSVCP140.dll',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\Lib\\site-packages\\PyQt5\\Qt5\\bin\\MSVCP140.dll',
+   'BINARY'),
+  ('libffi-7.dll',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\DLLs\\libffi-7.dll',
+   'BINARY'),
+  ('Pythonwin\\mfc140u.dll',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\Pythonwin\\mfc140u.dll',
+   'BINARY'),
+  ('libcrypto-1_1.dll',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\DLLs\\libcrypto-1_1.dll',
+   'BINARY'),
+  ('libssl-1_1.dll',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\DLLs\\libssl-1_1.dll',
+   'BINARY'),
+  ('python3.dll',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\python3.dll',
+   'BINARY'),
+  ('sqlite3.dll',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\DLLs\\sqlite3.dll',
+   'BINARY'),
+  ('PyQt5\\Qt5\\bin\\MSVCP140_1.dll',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\bin\\MSVCP140_1.dll',
+   'BINARY'),
+  ('static\\.DS_Store',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\.DS_Store',
+   'DATA'),
+  ('static\\css\\all.css',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\css\\all.css',
+   'DATA'),
+  ('static\\css\\all.min.css',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\css\\all.min.css',
+   'DATA'),
+  ('static\\css\\bootstrap.min.css',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\css\\bootstrap.min.css',
+   'DATA'),
+  ('static\\css\\fontawesome.min.css',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\css\\fontawesome.min.css',
+   'DATA'),
+  ('static\\css\\jquery.dataTables.css',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\css\\jquery.dataTables.css',
+   'DATA'),
+  ('static\\css\\jquery.dataTables.min.css',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\css\\jquery.dataTables.min.css',
+   'DATA'),
+  ('static\\css\\main.css',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\css\\main.css',
+   'DATA'),
+  ('static\\dist\\.DS_Store',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\dist\\.DS_Store',
+   'DATA'),
+  ('static\\dist\\css\\bootstrap.min.css',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\dist\\css\\bootstrap.min.css',
+   'DATA'),
+  ('static\\dist\\js\\bootstrap.bundle.min.js',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\dist\\js\\bootstrap.bundle.min.js',
+   'DATA'),
+  ('static\\dist\\js\\jquery.min.js',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\dist\\js\\jquery.min.js',
+   'DATA'),
+  ('static\\documents\\.DS_Store',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\documents\\.DS_Store',
+   'DATA'),
+  ('static\\documents\\alex@gmail.comDocs\\.DS_Store',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\documents\\alex@gmail.comDocs\\.DS_Store',
+   'DATA'),
+  ('static\\documents\\alex@gmail.comDocs\\FW23TD000001\\.DS_Store',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\documents\\alex@gmail.comDocs\\FW23TD000001\\.DS_Store',
+   'DATA'),
+  ('static\\documents\\alex@gmail.comDocs\\FW23TD000001\\doc1\\uploaded_image.jpg',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\documents\\alex@gmail.comDocs\\FW23TD000001\\doc1\\uploaded_image.jpg',
+   'DATA'),
+  ('static\\documents\\alex@gmail.comDocs\\FW23TD000001\\familyMembers\\.DS_Store',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\documents\\alex@gmail.comDocs\\FW23TD000001\\familyMembers\\.DS_Store',
+   'DATA'),
+  ('static\\documents\\alex@gmail.comDocs\\FW23TD000001\\familyMembers\\FM23TD000001\\.DS_Store',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\documents\\alex@gmail.comDocs\\FW23TD000001\\familyMembers\\FM23TD000001\\.DS_Store',
+   'DATA'),
+  ('static\\documents\\alex@gmail.comDocs\\FW23TD000001\\familyMembers\\FM23TD000001\\doc1\\uploaded_image.jpg',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\documents\\alex@gmail.comDocs\\FW23TD000001\\familyMembers\\FM23TD000001\\doc1\\uploaded_image.jpg',
+   'DATA'),
+  ('static\\documents\\alex@gmail.comDocs\\FW23TD000001\\familyMembers\\FM23TD000001\\doc2\\uploaded_image.jpg',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\documents\\alex@gmail.comDocs\\FW23TD000001\\familyMembers\\FM23TD000001\\doc2\\uploaded_image.jpg',
+   'DATA'),
+  ('static\\documents\\alex@gmail.comDocs\\FW23TD000001\\familyMembers\\FM23TD000002\\doc1\\uploaded_image.jpg',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\documents\\alex@gmail.comDocs\\FW23TD000001\\familyMembers\\FM23TD000002\\doc1\\uploaded_image.jpg',
+   'DATA'),
+  ('static\\documents\\alex@gmail.comDocs\\FW23TD000001\\familyMembers\\FM23TD000002\\doc2\\uploaded_image.jpg',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\documents\\alex@gmail.comDocs\\FW23TD000001\\familyMembers\\FM23TD000002\\doc2\\uploaded_image.jpg',
+   'DATA'),
+  ('static\\documents\\alex@gmail.comDocs\\FW23TD000001\\familyMembers\\FM23TD000003\\doc2\\uploaded_image.jpg',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\documents\\alex@gmail.comDocs\\FW23TD000001\\familyMembers\\FM23TD000003\\doc2\\uploaded_image.jpg',
+   'DATA'),
+  ('static\\documents\\alex@gmail.comDocs\\FW23TD000011\\doc1\\uploaded_image.jpg',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\documents\\alex@gmail.comDocs\\FW23TD000011\\doc1\\uploaded_image.jpg',
+   'DATA'),
+  ('static\\documents\\alex@gmail.comDocs\\FW23TD000011\\doc2\\uploaded_image.jpg',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\documents\\alex@gmail.comDocs\\FW23TD000011\\doc2\\uploaded_image.jpg',
+   'DATA'),
+  ('static\\documents\\alex@gmail.comDocs\\FW23TD000012\\.DS_Store',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\documents\\alex@gmail.comDocs\\FW23TD000012\\.DS_Store',
+   'DATA'),
+  ('static\\documents\\alex@gmail.comDocs\\FW23TD000012\\familyMembers\\.DS_Store',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\documents\\alex@gmail.comDocs\\FW23TD000012\\familyMembers\\.DS_Store',
+   'DATA'),
+  ('static\\documents\\alex@gmail.comDocs\\FW23TD000012\\familyMembers\\FM23TD000004\\.DS_Store',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\documents\\alex@gmail.comDocs\\FW23TD000012\\familyMembers\\FM23TD000004\\.DS_Store',
+   'DATA'),
+  ('static\\documents\\alex@gmail.comDocs\\FW23TD000012\\familyMembers\\FM23TD000004\\doc1\\uploaded_image.jpg',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\documents\\alex@gmail.comDocs\\FW23TD000012\\familyMembers\\FM23TD000004\\doc1\\uploaded_image.jpg',
+   'DATA'),
+  ('static\\documents\\alex@gmail.comDocs\\FW23TD000012\\familyMembers\\FM23TD000004\\doc2\\uploaded_image.jpg',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\documents\\alex@gmail.comDocs\\FW23TD000012\\familyMembers\\FM23TD000004\\doc2\\uploaded_image.jpg',
+   'DATA'),
+  ('static\\documents\\alex@gmail.comDocs\\FW23TD000013\\.DS_Store',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\documents\\alex@gmail.comDocs\\FW23TD000013\\.DS_Store',
+   'DATA'),
+  ('static\\documents\\alex@gmail.comDocs\\FW23TD000013\\doc1\\uploaded_image.jpg',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\documents\\alex@gmail.comDocs\\FW23TD000013\\doc1\\uploaded_image.jpg',
+   'DATA'),
+  ('static\\documents\\alex@gmail.comDocs\\FW23TD000013\\doc2\\uploaded_image.jpg',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\documents\\alex@gmail.comDocs\\FW23TD000013\\doc2\\uploaded_image.jpg',
+   'DATA'),
+  ('static\\documents\\alex@gmail.comDocs\\FW23TD000013\\familyMembers\\.DS_Store',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\documents\\alex@gmail.comDocs\\FW23TD000013\\familyMembers\\.DS_Store',
+   'DATA'),
+  ('static\\documents\\alex@gmail.comDocs\\FW23TD000014\\.DS_Store',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\documents\\alex@gmail.comDocs\\FW23TD000014\\.DS_Store',
+   'DATA'),
+  ('static\\documents\\alex@gmail.comDocs\\FW23TD000014\\familyMembers\\.DS_Store',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\documents\\alex@gmail.comDocs\\FW23TD000014\\familyMembers\\.DS_Store',
+   'DATA'),
+  ('static\\documents\\john@gDocs\\.DS_Store',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\documents\\john@gDocs\\.DS_Store',
+   'DATA'),
+  ('static\\documents\\john@gDocs\\FW23NSPL000001\\doc1\\uploaded_image.jpg',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\documents\\john@gDocs\\FW23NSPL000001\\doc1\\uploaded_image.jpg',
+   'DATA'),
+  ('static\\documents\\john@gDocs\\FW23NSPL000001\\doc2\\uploaded_image.jpg',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\documents\\john@gDocs\\FW23NSPL000001\\doc2\\uploaded_image.jpg',
+   'DATA'),
+  ('static\\icons\\dashboard.png',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\icons\\dashboard.png',
+   'DATA'),
+  ('static\\img\\.DS_Store',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\img\\.DS_Store',
+   'DATA'),
+  ('static\\img\\admin\\.DS_Store',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\img\\admin\\.DS_Store',
+   'DATA'),
+  ('static\\img\\admin\\blank_profile.jpg',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\img\\admin\\blank_profile.jpg',
+   'DATA'),
+  ('static\\img\\admin\\testing.avif',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\img\\admin\\testing.avif',
+   'DATA'),
+  ('static\\img\\error.png',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\img\\error.png',
+   'DATA'),
+  ('static\\img\\icon-upload.gif',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\img\\icon-upload.gif',
+   'DATA'),
+  ('static\\img\\logo.png',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\img\\logo.png',
+   'DATA'),
+  ('static\\img\\no-image.png',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\img\\no-image.png',
+   'DATA'),
+  ('static\\img\\qr-code.png',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\img\\qr-code.png',
+   'DATA'),
+  ('static\\img\\remove.png',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\img\\remove.png',
+   'DATA'),
+  ('static\\img\\subAdmin\\16092023236768_blank_profile.jpg',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\img\\subAdmin\\16092023236768_blank_profile.jpg',
+   'DATA'),
+  ('static\\img\\subAdmin\\16092023865758blank_profile.jpg',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\img\\subAdmin\\16092023865758blank_profile.jpg',
+   'DATA'),
+  ('static\\img\\subAdmin\\16092023930282_blank_profile.jpg',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\img\\subAdmin\\16092023930282_blank_profile.jpg',
+   'DATA'),
+  ('static\\img\\subAdmin\\blank_profile.jpg',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\img\\subAdmin\\blank_profile.jpg',
+   'DATA'),
+  ('static\\img\\subAdmin\\testing.avif',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\img\\subAdmin\\testing.avif',
+   'DATA'),
+  ('static\\img\\success.png',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\img\\success.png',
+   'DATA'),
+  ('static\\img\\uploaded-image\\illegal3\\scaled_5fdc0e11-31c5-45b2-ae94-80b3825c50c15944343681868418114.jpg',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\img\\uploaded-image\\illegal3\\scaled_5fdc0e11-31c5-45b2-ae94-80b3825c50c15944343681868418114.jpg',
+   'DATA'),
+  ('static\\img\\uploaded-image\\legal1\\scaled_0514b5a3-bc36-4416-83dd-e8c0b2662da58591364826872297460.jpg',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\img\\uploaded-image\\legal1\\scaled_0514b5a3-bc36-4416-83dd-e8c0b2662da58591364826872297460.jpg',
+   'DATA'),
+  ('static\\img\\uploaded-image\\legal1\\scaled_15cfa85f-5dcd-4340-8331-154585ee27098603673244443905003.jpg',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\img\\uploaded-image\\legal1\\scaled_15cfa85f-5dcd-4340-8331-154585ee27098603673244443905003.jpg',
+   'DATA'),
+  ('static\\img\\uploaded-image\\legal1\\scaled_18352b16-2d2a-4b30-acc0-a3d2d2525d2f6742814021242210247.jpg',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\img\\uploaded-image\\legal1\\scaled_18352b16-2d2a-4b30-acc0-a3d2d2525d2f6742814021242210247.jpg',
+   'DATA'),
+  ('static\\img\\uploaded-image\\legal1\\scaled_49c9bf54-fa59-4d87-917f-663835e9acf3437093218136882889.jpg',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\img\\uploaded-image\\legal1\\scaled_49c9bf54-fa59-4d87-917f-663835e9acf3437093218136882889.jpg',
+   'DATA'),
+  ('static\\img\\uploaded-image\\legal1\\scaled_7bff8bc8-7829-453b-b650-f6bc416082984557352218601857219.jpg',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\img\\uploaded-image\\legal1\\scaled_7bff8bc8-7829-453b-b650-f6bc416082984557352218601857219.jpg',
+   'DATA'),
+  ('static\\img\\uploaded-image\\legal1\\scaled_9720701d-62c2-452f-967b-e3200b88e1e63771858950697999721.jpg',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\img\\uploaded-image\\legal1\\scaled_9720701d-62c2-452f-967b-e3200b88e1e63771858950697999721.jpg',
+   'DATA'),
+  ('static\\img\\uploaded-image\\legal1\\scaled_a47894ee-cc74-47fa-89e2-a7abc134a43a8508594851756746727.jpg',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\img\\uploaded-image\\legal1\\scaled_a47894ee-cc74-47fa-89e2-a7abc134a43a8508594851756746727.jpg',
+   'DATA'),
+  ('static\\img\\uploaded-image\\legal1\\scaled_ce3344fb-81e7-43ea-be1c-4f7eef06b6798074462796822650323.jpg',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\img\\uploaded-image\\legal1\\scaled_ce3344fb-81e7-43ea-be1c-4f7eef06b6798074462796822650323.jpg',
+   'DATA'),
+  ('static\\img\\uploaded-image\\legal1\\scaled_d27bf133-0272-4783-991b-e48da8d2affb1163221785553924586.jpg',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\img\\uploaded-image\\legal1\\scaled_d27bf133-0272-4783-991b-e48da8d2affb1163221785553924586.jpg',
+   'DATA'),
+  ('static\\img\\uploaded-image\\legal1\\scaled_d5b8ab8d-edf6-404a-a933-b46f3cd4b1e61694374611080185593.jpg',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\img\\uploaded-image\\legal1\\scaled_d5b8ab8d-edf6-404a-a933-b46f3cd4b1e61694374611080185593.jpg',
+   'DATA'),
+  ('static\\img\\uploaded-image\\legal1\\scaled_dc6965ff-aeab-4d9d-94ef-27f7be9925056956619576258424024.jpg',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\img\\uploaded-image\\legal1\\scaled_dc6965ff-aeab-4d9d-94ef-27f7be9925056956619576258424024.jpg',
+   'DATA'),
+  ('static\\img\\uploaded-image\\legal1\\scaled_e916e20d-1a90-4794-8d9b-1a7051d020e78697075031443035157.jpg',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\img\\uploaded-image\\legal1\\scaled_e916e20d-1a90-4794-8d9b-1a7051d020e78697075031443035157.jpg',
+   'DATA'),
+  ('static\\img\\uploaded-image\\scaled_0514b5a3-bc36-4416-83dd-e8c0b2662da58591364826872297460.jpg',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\img\\uploaded-image\\scaled_0514b5a3-bc36-4416-83dd-e8c0b2662da58591364826872297460.jpg',
+   'DATA'),
+  ('static\\img\\uploaded-image\\scaled_15cfa85f-5dcd-4340-8331-154585ee27098603673244443905003.jpg',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\img\\uploaded-image\\scaled_15cfa85f-5dcd-4340-8331-154585ee27098603673244443905003.jpg',
+   'DATA'),
+  ('static\\img\\uploaded-image\\scaled_49c9bf54-fa59-4d87-917f-663835e9acf3437093218136882889.jpg',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\img\\uploaded-image\\scaled_49c9bf54-fa59-4d87-917f-663835e9acf3437093218136882889.jpg',
+   'DATA'),
+  ('static\\img\\uploaded-image\\scaled_4be5a157-f563-45db-8b92-508db273b7f02829977377308956719.jpg',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\img\\uploaded-image\\scaled_4be5a157-f563-45db-8b92-508db273b7f02829977377308956719.jpg',
+   'DATA'),
+  ('static\\img\\uploaded-image\\scaled_7bff8bc8-7829-453b-b650-f6bc416082984557352218601857219.jpg',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\img\\uploaded-image\\scaled_7bff8bc8-7829-453b-b650-f6bc416082984557352218601857219.jpg',
+   'DATA'),
+  ('static\\img\\uploaded-image\\scaled_9720701d-62c2-452f-967b-e3200b88e1e63771858950697999721.jpg',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\img\\uploaded-image\\scaled_9720701d-62c2-452f-967b-e3200b88e1e63771858950697999721.jpg',
+   'DATA'),
+  ('static\\img\\uploaded-image\\scaled_a47894ee-cc74-47fa-89e2-a7abc134a43a8508594851756746727.jpg',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\img\\uploaded-image\\scaled_a47894ee-cc74-47fa-89e2-a7abc134a43a8508594851756746727.jpg',
+   'DATA'),
+  ('static\\img\\uploaded-image\\scaled_ce3344fb-81e7-43ea-be1c-4f7eef06b6798074462796822650323.jpg',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\img\\uploaded-image\\scaled_ce3344fb-81e7-43ea-be1c-4f7eef06b6798074462796822650323.jpg',
+   'DATA'),
+  ('static\\img\\uploaded-image\\scaled_d27bf133-0272-4783-991b-e48da8d2affb1163221785553924586.jpg',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\img\\uploaded-image\\scaled_d27bf133-0272-4783-991b-e48da8d2affb1163221785553924586.jpg',
+   'DATA'),
+  ('static\\img\\uploaded-image\\scaled_d5b8ab8d-edf6-404a-a933-b46f3cd4b1e61694374611080185593.jpg',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\img\\uploaded-image\\scaled_d5b8ab8d-edf6-404a-a933-b46f3cd4b1e61694374611080185593.jpg',
+   'DATA'),
+  ('static\\img\\uploaded-image\\scaled_dc6965ff-aeab-4d9d-94ef-27f7be9925056956619576258424024.jpg',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\img\\uploaded-image\\scaled_dc6965ff-aeab-4d9d-94ef-27f7be9925056956619576258424024.jpg',
+   'DATA'),
+  ('static\\img\\uploaded-image\\scaled_e916e20d-1a90-4794-8d9b-1a7051d020e78697075031443035157.jpg',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\img\\uploaded-image\\scaled_e916e20d-1a90-4794-8d9b-1a7051d020e78697075031443035157.jpg',
+   'DATA'),
+  ('static\\js\\all.min.js',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\js\\all.min.js',
+   'DATA'),
+  ('static\\js\\bootstrap.min.js',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\js\\bootstrap.min.js',
+   'DATA'),
+  ('static\\js\\jquery.dataTables.js',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\js\\jquery.dataTables.js',
+   'DATA'),
+  ('static\\js\\jquery.dataTables.min.js',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\js\\jquery.dataTables.min.js',
+   'DATA'),
+  ('static\\js\\jquery.min.js',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\js\\jquery.min.js',
+   'DATA'),
+  ('static\\js\\jspdf.umd.min.js',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\js\\jspdf.umd.min.js',
+   'DATA'),
+  ('static\\js\\main-backup1.js',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\js\\main-backup1.js',
+   'DATA'),
+  ('static\\js\\main.js',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\js\\main.js',
+   'DATA'),
+  ('static\\js\\qr-code-styling.js',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\js\\qr-code-styling.js',
+   'DATA'),
+  ('static\\js\\sweetalert2.all.min.js',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\js\\sweetalert2.all.min.js',
+   'DATA'),
+  ('static\\qr\\README.md',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\qr\\README.md',
+   'DATA'),
+  ('static\\qr\\bower.json',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\qr\\bower.json',
+   'DATA'),
+  ('static\\qr\\index-svg.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\qr\\index-svg.html',
+   'DATA'),
+  ('static\\qr\\index.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\qr\\index.html',
+   'DATA'),
+  ('static\\qr\\index.svg',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\qr\\index.svg',
+   'DATA'),
+  ('static\\qr\\jquery.min.js',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\qr\\jquery.min.js',
+   'DATA'),
+  ('static\\qr\\qrcode.js',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\qr\\qrcode.js',
+   'DATA'),
+  ('static\\qr\\qrcode.min.js',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\qr\\qrcode.min.js',
+   'DATA'),
+  ('static\\swims-qr.png',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\static\\swims-qr.png',
+   'DATA'),
+  ('templates\\add-worker-backup.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\add-worker-backup.html',
+   'DATA'),
+  ('templates\\add-worker.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\add-worker.html',
+   'DATA'),
+  ('templates\\admin-citizenship.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\admin-citizenship.html',
+   'DATA'),
+  ('templates\\admin-city.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\admin-city.html',
+   'DATA'),
+  ('templates\\admin-create-exe-users.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\admin-create-exe-users.html',
+   'DATA'),
+  ('templates\\admin-create-sub-admin.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\admin-create-sub-admin.html',
+   'DATA'),
+  ('templates\\admin-dash.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\admin-dash.html',
+   'DATA'),
+  ('templates\\admin-designation.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\admin-designation.html',
+   'DATA'),
+  ('templates\\admin-document-status.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\admin-document-status.html',
+   'DATA'),
+  ('templates\\admin-edit-exe-users.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\admin-edit-exe-users.html',
+   'DATA'),
+  ('templates\\admin-edit-family-member.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\admin-edit-family-member.html',
+   'DATA'),
+  ('templates\\admin-edit-registered-worker.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\admin-edit-registered-worker.html',
+   'DATA'),
+  ('templates\\admin-edit-sub-admin.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\admin-edit-sub-admin.html',
+   'DATA'),
+  ('templates\\admin-employment-detail.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\admin-employment-detail.html',
+   'DATA'),
+  ('templates\\admin-footer.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\admin-footer.html',
+   'DATA'),
+  ('templates\\admin-gender.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\admin-gender.html',
+   'DATA'),
+  ('templates\\admin-header.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\admin-header.html',
+   'DATA'),
+  ('templates\\admin-issuing-country.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\admin-issuing-country.html',
+   'DATA'),
+  ('templates\\admin-job-sub-sector.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\admin-job-sub-sector.html',
+   'DATA'),
+  ('templates\\admin-legal-status.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\admin-legal-status.html',
+   'DATA'),
+  ('templates\\admin-license-category.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\admin-license-category.html',
+   'DATA'),
+  ('templates\\admin-marital-status.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\admin-marital-status.html',
+   'DATA'),
+  ('templates\\admin-online-server-sync.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\admin-online-server-sync.html',
+   'DATA'),
+  ('templates\\admin-outreach.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\admin-outreach.html',
+   'DATA'),
+  ('templates\\admin-point-of-entry.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\admin-point-of-entry.html',
+   'DATA'),
+  ('templates\\admin-print-qr-3x3.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\admin-print-qr-3x3.html',
+   'DATA'),
+  ('templates\\admin-print-qr-code.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\admin-print-qr-code.html',
+   'DATA'),
+  ('templates\\admin-print-qr.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\admin-print-qr.html',
+   'DATA'),
+  ('templates\\admin-profile.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\admin-profile.html',
+   'DATA'),
+  ('templates\\admin-race.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\admin-race.html',
+   'DATA'),
+  ('templates\\admin-registration-list.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\admin-registration-list.html',
+   'DATA'),
+  ('templates\\admin-registration-log-list.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\admin-registration-log-list.html',
+   'DATA'),
+  ('templates\\admin-registration-log.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\admin-registration-log.html',
+   'DATA'),
+  ('templates\\admin-relationship-to-worker.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\admin-relationship-to-worker.html',
+   'DATA'),
+  ('templates\\admin-religion.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\admin-religion.html',
+   'DATA'),
+  ('templates\\admin-sector.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\admin-sector.html',
+   'DATA'),
+  ('templates\\admin-set-dermalog-ip.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\admin-set-dermalog-ip.html',
+   'DATA'),
+  ('templates\\admin-staff-connection-status.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\admin-staff-connection-status.html',
+   'DATA'),
+  ('templates\\admin-state.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\admin-state.html',
+   'DATA'),
+  ('templates\\admin-status-of-current-document.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\admin-status-of-current-document.html',
+   'DATA'),
+  ('templates\\admin-type-of-document.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\admin-type-of-document.html',
+   'DATA'),
+  ('templates\\admin-upload-data-to-server.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\admin-upload-data-to-server.html',
+   'DATA'),
+  ('templates\\admin-view-exe-users.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\admin-view-exe-users.html',
+   'DATA'),
+  ('templates\\admin-view-family-member.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\admin-view-family-member.html',
+   'DATA'),
+  ('templates\\admin-view-registered-worker.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\admin-view-registered-worker.html',
+   'DATA'),
+  ('templates\\admin-view-sub-admin.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\admin-view-sub-admin.html',
+   'DATA'),
+  ('templates\\admin-worker-details.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\admin-worker-details.html',
+   'DATA'),
+  ('templates\\admin-working-status.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\admin-working-status.html',
+   'DATA'),
+  ('templates\\base.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\base.html',
+   'DATA'),
+  ('templates\\create-sub-users.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\create-sub-users.html',
+   'DATA'),
+  ('templates\\edit-family-member.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\edit-family-member.html',
+   'DATA'),
+  ('templates\\edit-family-member1.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\edit-family-member1.html',
+   'DATA'),
+  ('templates\\edit-family-member2.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\edit-family-member2.html',
+   'DATA'),
+  ('templates\\edit-profile.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\edit-profile.html',
+   'DATA'),
+  ('templates\\edit-registered-worker.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\edit-registered-worker.html',
+   'DATA'),
+  ('templates\\edit-registered-worker1.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\edit-registered-worker1.html',
+   'DATA'),
+  ('templates\\edit-registered-worker2.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\edit-registered-worker2.html',
+   'DATA'),
+  ('templates\\export-form-to-excel.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\export-form-to-excel.html',
+   'DATA'),
+  ('templates\\footer.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\footer.html',
+   'DATA'),
+  ('templates\\header.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\header.html',
+   'DATA'),
+  ('templates\\index.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\index.html',
+   'DATA'),
+  ('templates\\list.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\list.html',
+   'DATA'),
+  ('templates\\login.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\login.html',
+   'DATA'),
+  ('templates\\my-reg-subusers-list.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\my-reg-subusers-list.html',
+   'DATA'),
+  ('templates\\my-registration-list.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\my-registration-list.html',
+   'DATA'),
+  ('templates\\my-registration-log.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\my-registration-log.html',
+   'DATA'),
+  ('templates\\my-subusers-list.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\my-subusers-list.html',
+   'DATA'),
+  ('templates\\print-qr-3x3.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\print-qr-3x3.html',
+   'DATA'),
+  ('templates\\print-qr-code.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\print-qr-code.html',
+   'DATA'),
+  ('templates\\print-qr.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\print-qr.html',
+   'DATA'),
+  ('templates\\profile-backup.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\profile-backup.html',
+   'DATA'),
+  ('templates\\profile.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\profile.html',
+   'DATA'),
+  ('templates\\registration-list.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\registration-list.html',
+   'DATA'),
+  ('templates\\registration-log.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\registration-log.html',
+   'DATA'),
+  ('templates\\result.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\result.html',
+   'DATA'),
+  ('templates\\student.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\student.html',
+   'DATA'),
+  ('templates\\sub-admin-dash.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\sub-admin-dash.html',
+   'DATA'),
+  ('templates\\sub-admin-edit-exe-users.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\sub-admin-edit-exe-users.html',
+   'DATA'),
+  ('templates\\sub-admin-footer.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\sub-admin-footer.html',
+   'DATA'),
+  ('templates\\sub-admin-header.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\sub-admin-header.html',
+   'DATA'),
+  ('templates\\sub-admin-print-qr-3x3.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\sub-admin-print-qr-3x3.html',
+   'DATA'),
+  ('templates\\sub-admin-print-qr-code.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\sub-admin-print-qr-code.html',
+   'DATA'),
+  ('templates\\sub-admin-print-qr.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\sub-admin-print-qr.html',
+   'DATA'),
+  ('templates\\sub-admin-profile.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\sub-admin-profile.html',
+   'DATA'),
+  ('templates\\sub-admin-registration-list.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\sub-admin-registration-list.html',
+   'DATA'),
+  ('templates\\sub-admin-registration-log-list.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\sub-admin-registration-log-list.html',
+   'DATA'),
+  ('templates\\sub-admin-registration-log.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\sub-admin-registration-log.html',
+   'DATA'),
+  ('templates\\sub-admin-view-exe-users.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\sub-admin-view-exe-users.html',
+   'DATA'),
+  ('templates\\sub-admin-view-family-member.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\sub-admin-view-family-member.html',
+   'DATA'),
+  ('templates\\sub-admin-view-registered-worker.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\sub-admin-view-registered-worker.html',
+   'DATA'),
+  ('templates\\sub-admin-worker-details.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\sub-admin-worker-details.html',
+   'DATA'),
+  ('templates\\sub-user-add-worker.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\sub-user-add-worker.html',
+   'DATA'),
+  ('templates\\sub-user-edit-family-member.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\sub-user-edit-family-member.html',
+   'DATA'),
+  ('templates\\sub-user-edit-registered-worker.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\sub-user-edit-registered-worker.html',
+   'DATA'),
+  ('templates\\sub-user-footer.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\sub-user-footer.html',
+   'DATA'),
+  ('templates\\sub-user-header.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\sub-user-header.html',
+   'DATA'),
+  ('templates\\sub-user-profile.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\sub-user-profile.html',
+   'DATA'),
+  ('templates\\sub-user-registration-list.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\sub-user-registration-list.html',
+   'DATA'),
+  ('templates\\sub-user-registration-log.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\sub-user-registration-log.html',
+   'DATA'),
+  ('templates\\sub-user-view-family-member.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\sub-user-view-family-member.html',
+   'DATA'),
+  ('templates\\sub-user-view-registered-worker.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\sub-user-view-registered-worker.html',
+   'DATA'),
+  ('templates\\subusers-registration-list.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\subusers-registration-list.html',
+   'DATA'),
+  ('templates\\subusers-registration-log.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\subusers-registration-log.html',
+   'DATA'),
+  ('templates\\users.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\users.html',
+   'DATA'),
+  ('templates\\view-family-member.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\view-family-member.html',
+   'DATA'),
+  ('templates\\view-family-member1.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\view-family-member1.html',
+   'DATA'),
+  ('templates\\view-family-member2.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\view-family-member2.html',
+   'DATA'),
+  ('templates\\view-img.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\view-img.html',
+   'DATA'),
+  ('templates\\view-registered-worker.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\view-registered-worker.html',
+   'DATA'),
+  ('templates\\view-registered-worker1.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\view-registered-worker1.html',
+   'DATA'),
+  ('templates\\view-registered-worker2.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\view-registered-worker2.html',
+   'DATA'),
+  ('templates\\view-sub-users.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\view-sub-users.html',
+   'DATA'),
+  ('templates\\worker-details.html',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\templates\\worker-details.html',
+   'DATA'),
+  ('base_library.zip',
+   'C:\\Users\\NiGELLA SOFTWARES\\Desktop\\31 '
+   'Oct2023\\outreach-admin\\build\\app\\base_library.zip',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_ar.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_ar.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_hu.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_hu.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_cs.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_cs.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_ru.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_ru.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_zh_TW.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_zh_TW.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_da.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_da.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_gd.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_gd.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_es.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_es.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_sk.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_sk.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_ja.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_ja.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_sl.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_sl.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_pt.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_pt.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_lv.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_lv.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_zh_TW.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_zh_TW.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_it.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_it.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_sv.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_sv.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_gd.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_gd.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_ja.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_ja.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_sl.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_sl.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_ar.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_ar.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_da.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_da.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_da.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_da.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_uk.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_uk.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_he.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_he.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_uk.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_uk.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_it.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_it.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_ko.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_ko.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_bg.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_bg.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_en.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_en.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_fa.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_fa.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_pl.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_pl.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_tr.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_tr.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_ca.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_ca.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_en.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_en.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_de.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_de.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_sk.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_sk.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_pl.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_pl.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_sk.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_sk.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_pl.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_pl.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_bg.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_bg.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_fi.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_fi.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_he.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_he.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_cs.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_cs.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_ru.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_ru.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_ja.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_ja.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_tr.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_tr.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_it.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_it.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_ca.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_ca.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_de.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_de.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_fi.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_fi.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_ru.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_ru.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_es.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_es.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_de.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_de.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_ko.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_ko.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_lv.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_lv.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_es.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_es.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_gl.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_gl.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_en.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_en.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_tr.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_tr.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_fr.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_fr.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_fr.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_fr.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_uk.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_uk.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_zh_CN.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_zh_CN.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_hu.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_hu.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_ar.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_ar.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_cs.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_cs.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_zh_TW.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_zh_TW.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_help_hu.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_help_hu.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_zh_CN.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_zh_CN.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_ko.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_ko.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_gl.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_gl.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_ca.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_ca.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_lt.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_lt.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qt_bg.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qt_bg.qm',
+   'DATA'),
+  ('PyQt5\\Qt5\\translations\\qtbase_fr.qm',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyQt5\\Qt5\\translations\\qtbase_fr.qm',
+   'DATA'),
+  ('setuptools-49.2.1.dist-info\\WHEEL',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\setuptools-49.2.1.dist-info\\WHEEL',
+   'DATA'),
+  ('setuptools-49.2.1.dist-info\\REQUESTED',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\setuptools-49.2.1.dist-info\\REQUESTED',
+   'DATA'),
+  ('gevent-23.9.1.dist-info\\AUTHORS',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\gevent-23.9.1.dist-info\\AUTHORS',
+   'DATA'),
+  ('pycparser-2.21.dist-info\\INSTALLER',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\pycparser-2.21.dist-info\\INSTALLER',
+   'DATA'),
+  ('setuptools-49.2.1.dist-info\\RECORD',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\setuptools-49.2.1.dist-info\\RECORD',
+   'DATA'),
+  ('zope.interface-6.0.dist-info\\top_level.txt',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\zope.interface-6.0.dist-info\\top_level.txt',
+   'DATA'),
+  ('gevent-23.9.1.dist-info\\INSTALLER',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\gevent-23.9.1.dist-info\\INSTALLER',
+   'DATA'),
+  ('zope.interface-6.0.dist-info\\RECORD',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\zope.interface-6.0.dist-info\\RECORD',
+   'DATA'),
+  ('setuptools-49.2.1.dist-info\\entry_points.txt',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\setuptools-49.2.1.dist-info\\entry_points.txt',
+   'DATA'),
+  ('setuptools-49.2.1.dist-info\\LICENSE',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\setuptools-49.2.1.dist-info\\LICENSE',
+   'DATA'),
+  ('gevent-23.9.1.dist-info\\top_level.txt',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\gevent-23.9.1.dist-info\\top_level.txt',
+   'DATA'),
+  ('cffi-1.15.1.dist-info\\METADATA',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\cffi-1.15.1.dist-info\\METADATA',
+   'DATA'),
+  ('pycparser-2.21.dist-info\\top_level.txt',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\pycparser-2.21.dist-info\\top_level.txt',
+   'DATA'),
+  ('pycparser-2.21.dist-info\\METADATA',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\pycparser-2.21.dist-info\\METADATA',
+   'DATA'),
+  ('cffi-1.15.1.dist-info\\WHEEL',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\cffi-1.15.1.dist-info\\WHEEL',
+   'DATA'),
+  ('pycparser-2.21.dist-info\\LICENSE',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\pycparser-2.21.dist-info\\LICENSE',
+   'DATA'),
+  ('greenlet-2.0.2.dist-info\\AUTHORS',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\greenlet-2.0.2.dist-info\\AUTHORS',
+   'DATA'),
+  ('greenlet-2.0.2.dist-info\\LICENSE.PSF',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\greenlet-2.0.2.dist-info\\LICENSE.PSF',
+   'DATA'),
+  ('zope.event-5.0.dist-info\\LICENSE.txt',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\zope.event-5.0.dist-info\\LICENSE.txt',
+   'DATA'),
+  ('gevent-23.9.1.dist-info\\WHEEL',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\gevent-23.9.1.dist-info\\WHEEL',
+   'DATA'),
+  ('zope.interface-6.0.dist-info\\namespace_packages.txt',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\zope.interface-6.0.dist-info\\namespace_packages.txt',
+   'DATA'),
+  ('gevent-23.9.1.dist-info\\entry_points.txt',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\gevent-23.9.1.dist-info\\entry_points.txt',
+   'DATA'),
+  ('gevent-23.9.1.dist-info\\RECORD',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\gevent-23.9.1.dist-info\\RECORD',
+   'DATA'),
+  ('setuptools-49.2.1.dist-info\\METADATA',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\setuptools-49.2.1.dist-info\\METADATA',
+   'DATA'),
+  ('zope.event-5.0.dist-info\\WHEEL',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\zope.event-5.0.dist-info\\WHEEL',
+   'DATA'),
+  ('greenlet-2.0.2.dist-info\\LICENSE',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\greenlet-2.0.2.dist-info\\LICENSE',
+   'DATA'),
+  ('gevent-23.9.1.dist-info\\LICENSE',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\gevent-23.9.1.dist-info\\LICENSE',
+   'DATA'),
+  ('cffi-1.15.1.dist-info\\RECORD',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\cffi-1.15.1.dist-info\\RECORD',
+   'DATA'),
+  ('zope.event-5.0.dist-info\\METADATA',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\zope.event-5.0.dist-info\\METADATA',
+   'DATA'),
+  ('zope.interface-6.0.dist-info\\LICENSE.txt',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\zope.interface-6.0.dist-info\\LICENSE.txt',
+   'DATA'),
+  ('setuptools-49.2.1.dist-info\\top_level.txt',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\setuptools-49.2.1.dist-info\\top_level.txt',
+   'DATA'),
+  ('zope.interface-6.0.dist-info\\WHEEL',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\zope.interface-6.0.dist-info\\WHEEL',
+   'DATA'),
+  ('greenlet-2.0.2.dist-info\\INSTALLER',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\greenlet-2.0.2.dist-info\\INSTALLER',
+   'DATA'),
+  ('setuptools-49.2.1.dist-info\\INSTALLER',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\setuptools-49.2.1.dist-info\\INSTALLER',
+   'DATA'),
+  ('greenlet-2.0.2.dist-info\\top_level.txt',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\greenlet-2.0.2.dist-info\\top_level.txt',
+   'DATA'),
+  ('gevent-23.9.1.dist-info\\NOTICE',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\gevent-23.9.1.dist-info\\NOTICE',
+   'DATA'),
+  ('pycparser-2.21.dist-info\\RECORD',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\pycparser-2.21.dist-info\\RECORD',
+   'DATA'),
+  ('cffi-1.15.1.dist-info\\entry_points.txt',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\cffi-1.15.1.dist-info\\entry_points.txt',
+   'DATA'),
+  ('setuptools-49.2.1.dist-info\\zip-safe',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\setuptools-49.2.1.dist-info\\zip-safe',
+   'DATA'),
+  ('zope.interface-6.0.dist-info\\INSTALLER',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\zope.interface-6.0.dist-info\\INSTALLER',
+   'DATA'),
+  ('cffi-1.15.1.dist-info\\INSTALLER',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\cffi-1.15.1.dist-info\\INSTALLER',
+   'DATA'),
+  ('zope.interface-6.0.dist-info\\METADATA',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\zope.interface-6.0.dist-info\\METADATA',
+   'DATA'),
+  ('zope.event-5.0.dist-info\\INSTALLER',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\zope.event-5.0.dist-info\\INSTALLER',
+   'DATA'),
+  ('zope.event-5.0.dist-info\\RECORD',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\zope.event-5.0.dist-info\\RECORD',
+   'DATA'),
+  ('gevent-23.9.1.dist-info\\METADATA',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\gevent-23.9.1.dist-info\\METADATA',
+   'DATA'),
+  ('cffi-1.15.1.dist-info\\LICENSE',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\cffi-1.15.1.dist-info\\LICENSE',
+   'DATA'),
+  ('setuptools-49.2.1.dist-info\\dependency_links.txt',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\setuptools-49.2.1.dist-info\\dependency_links.txt',
+   'DATA'),
+  ('zope.event-5.0.dist-info\\top_level.txt',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\zope.event-5.0.dist-info\\top_level.txt',
+   'DATA'),
+  ('cffi-1.15.1.dist-info\\top_level.txt',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\cffi-1.15.1.dist-info\\top_level.txt',
+   'DATA'),
+  ('greenlet-2.0.2.dist-info\\RECORD',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\greenlet-2.0.2.dist-info\\RECORD',
+   'DATA'),
+  ('pycparser-2.21.dist-info\\WHEEL',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\pycparser-2.21.dist-info\\WHEEL',
+   'DATA'),
+  ('zope.event-5.0.dist-info\\namespace_packages.txt',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\zope.event-5.0.dist-info\\namespace_packages.txt',
+   'DATA'),
+  ('greenlet-2.0.2.dist-info\\WHEEL',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\greenlet-2.0.2.dist-info\\WHEEL',
+   'DATA'),
+  ('greenlet-2.0.2.dist-info\\METADATA',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\greenlet-2.0.2.dist-info\\METADATA',
+   'DATA'),
+  ('certifi\\cacert.pem',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\certifi\\cacert.pem',
+   'DATA'),
+  ('certifi\\py.typed',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\certifi\\py.typed',
+   'DATA'),
+  ('importlib_metadata-6.8.0.dist-info\\METADATA',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\importlib_metadata-6.8.0.dist-info\\METADATA',
+   'DATA'),
+  ('importlib_metadata-6.8.0.dist-info\\WHEEL',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\importlib_metadata-6.8.0.dist-info\\WHEEL',
+   'DATA'),
+  ('importlib_metadata-6.8.0.dist-info\\INSTALLER',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\importlib_metadata-6.8.0.dist-info\\INSTALLER',
+   'DATA'),
+  ('importlib_metadata-6.8.0.dist-info\\top_level.txt',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\importlib_metadata-6.8.0.dist-info\\top_level.txt',
+   'DATA'),
+  ('importlib_metadata-6.8.0.dist-info\\RECORD',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\importlib_metadata-6.8.0.dist-info\\RECORD',
+   'DATA'),
+  ('importlib_metadata-6.8.0.dist-info\\LICENSE',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\importlib_metadata-6.8.0.dist-info\\LICENSE',
+   'DATA'),
+  ('werkzeug-2.3.7.dist-info\\INSTALLER',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\werkzeug-2.3.7.dist-info\\INSTALLER',
+   'DATA'),
+  ('pip-20.2.3.dist-info\\RECORD',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\pip-20.2.3.dist-info\\RECORD',
+   'DATA'),
+  ('flask-2.3.3.dist-info\\REQUESTED',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\flask-2.3.3.dist-info\\REQUESTED',
+   'DATA'),
+  ('werkzeug-2.3.7.dist-info\\WHEEL',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\werkzeug-2.3.7.dist-info\\WHEEL',
+   'DATA'),
+  ('pip-20.2.3.dist-info\\METADATA',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\pip-20.2.3.dist-info\\METADATA',
+   'DATA'),
+  ('flask-2.3.3.dist-info\\LICENSE.rst',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\flask-2.3.3.dist-info\\LICENSE.rst',
+   'DATA'),
+  ('pip-20.2.3.dist-info\\LICENSE.txt',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\pip-20.2.3.dist-info\\LICENSE.txt',
+   'DATA'),
+  ('flask-2.3.3.dist-info\\RECORD',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\flask-2.3.3.dist-info\\RECORD',
+   'DATA'),
+  ('werkzeug-2.3.7.dist-info\\RECORD',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\werkzeug-2.3.7.dist-info\\RECORD',
+   'DATA'),
+  ('flask-2.3.3.dist-info\\INSTALLER',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\flask-2.3.3.dist-info\\INSTALLER',
+   'DATA'),
+  ('pip-20.2.3.dist-info\\entry_points.txt',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\pip-20.2.3.dist-info\\entry_points.txt',
+   'DATA'),
+  ('pip-20.2.3.dist-info\\top_level.txt',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\pip-20.2.3.dist-info\\top_level.txt',
+   'DATA'),
+  ('pip-20.2.3.dist-info\\INSTALLER',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\pip-20.2.3.dist-info\\INSTALLER',
+   'DATA'),
+  ('flask-2.3.3.dist-info\\entry_points.txt',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\flask-2.3.3.dist-info\\entry_points.txt',
+   'DATA'),
+  ('flask-2.3.3.dist-info\\WHEEL',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\flask-2.3.3.dist-info\\WHEEL',
+   'DATA'),
+  ('pip-20.2.3.dist-info\\REQUESTED',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\pip-20.2.3.dist-info\\REQUESTED',
+   'DATA'),
+  ('pip-20.2.3.dist-info\\WHEEL',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\pip-20.2.3.dist-info\\WHEEL',
+   'DATA'),
+  ('werkzeug-2.3.7.dist-info\\LICENSE.rst',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\werkzeug-2.3.7.dist-info\\LICENSE.rst',
+   'DATA'),
+  ('flask-2.3.3.dist-info\\METADATA',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\flask-2.3.3.dist-info\\METADATA',
+   'DATA'),
+  ('werkzeug-2.3.7.dist-info\\METADATA',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\werkzeug-2.3.7.dist-info\\METADATA',
+   'DATA')],
+ [],
+ False,
+ False,
+ 1698748060,
+ [('runw.exe',
+   'C:\\Users\\NiGELLA '
+   'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit-intel\\runw.exe',
+   'EXECUTABLE')],
+ 'C:\\Users\\NiGELLA '
+ 'SOFTWARES\\AppData\\Local\\Programs\\Python\\Python39\\python39.dll')

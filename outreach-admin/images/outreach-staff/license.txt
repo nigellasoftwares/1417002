@@ -1,0 +1,98 @@
+END-USER LICENSE AGREEMENT (EULA) FOR REGISTRATION AND OUTREACH 
+APPLICATION SOFTWARE.
+
+IMPORTANT:
+
+PLEASE READ THIS AGREEMENT CAREFULLY BEFORE USING THE SOFTWARE. BY 
+INSTALLING OR OTHERWISE USING THE SOFTWARE, THE USER (REFERRED TO AS 
+"YOU," OR "YOUR") SHALL ACKNOWLEDGE AND AGREE TO BE BOUND BY THE 
+TERMS AND CONDITIONS OF THIS EULA. IF YOU DO NOT AGREE TO THESE TERMS, 
+DO NOT USE THE SOFTWARE.
+
+
+1. Proprietary Nature:
+
+The Software is copyrighted, including any and all intellectual property rights therein, is 
+proprietary and shall remain the exclusive property of the Licensor, and shall be referred as
+"We," "Us," or "Our". You acknowledge that the Software is protected by intellectual property 
+laws, including but not limited to copyright laws.
+
+2. License Grant:
+
+The Software is distributed to authorized-Users only, and shall be subjected to the terms and 
+conditions of this EULA. We grant You a limited, non-exclusive, non-transferable, limited-period and revocable license to use the Software for Your internal use only. This license does 
+not grant You any rights to modify, distribute, reverse engineer, decompile, disassemble, 
+create derivative works from, sublicense, sell, rent, lease, or lend the Software.
+
+3. Restrictions:
+
+You shall not use the Software for any purpose other than its intended use. You shall not use 
+the Software for any illegal, unauthorized, or unethical purposes. All Software will be supplied 
+and may be used in object code form only. You shall not reverse-assemble, reverse-compile, 
+reverse-engineer or in any way derive from Software any source code or decrypt the database.
+You shall not alter or remove alphanumeric identification characters, obscure any proprietary 
+notices, trademarks and copyright notices.
+
+4. Data Collection and Usage:
+
+You acknowledge that the Software only collects and process input data from users for the 
+purpose of applicant registration and outreach services. You agree to comply with all 
+applicable data protection laws and regulations in relation to the collection, processing, and 
+storage of such data. You shall be responsible for the content of the data collected through 
+the Software.
+
+5. Data Security and Liability:
+
+You are solely responsible for the security and integrity of any data collected through the 
+Software at Your site. You agree to implement appropriate security measures to protect the 
+data from unauthorized access, loss, or breach. In the event of any breach, You shall promptly 
+notify affected parties and take necessary actions to mitigate further breaches.
+
+6. Updates and Support:
+
+Licensor may, at its discretion, provide updates, bug fixes, or support services for the Software. 
+Licensor shall have no obligation to provide updates or support.
+
+7. Indemnification:
+
+You agree to indemnify, defend, and hold Licensor harmless from and against any claims, 
+liabilities, damages, losses, and expenses (including reasonable attorney fees) arising from 
+Your use or misuse of the Software, or breach of this EULA.
+
+8. Governing Law and Jurisdiction:
+
+This EULA shall be governed by and construed in accordance with the laws of the jurisdiction 
+of Malaysia, in general, and Sabah, in particular. Any disputes arising from or related to this 
+EULA shall be subject to the exclusive jurisdiction of the Sabah courts.
+
+9. Entire Agreement:
+
+This EULA constitutes the entire agreement between You and Licensor, Leader Formation Sdn. 
+Bhd., relating to the Software and supersedes all prior or contemporaneous understandings, 
+representations, and agreements.
+
+10. Severability:
+
+If any provision of this EULA is held to be invalid or unenforceable, the remaining provisions 
+shall remain in full force and effect.
+
+11. Waiver:
+
+The failure of Licensor to enforce any right or provision of this EULA shall not constitute a 
+waiver of that right or provision.
+
+12. Termination:
+
+This EULA is effective until the Software use is terminated and permanently deleted. Licensor 
+may also terminate this EULA immediately and without notice if You breach any of its terms. 
+Upon termination, You shall cease all use of the Software and destroy all copies in Your 
+possession.
+
+By selecting “I accept the agreement” choice and using the Software, You acknowledge that 
+You have read and understood this EULA and agree to be bound by its terms and conditions. 
+For any questions, concerns or reporting of issues regarding this EULA, please email Licensor,
+at support@leaderformationsb.com, complete with Your name and Your contact details.
+
+Alternatively, if You do not agree with any of the provisions of this EULA, You must select “I do 
+not accept” and immediately cease using the Software, and entirely remove any installed form 
+of the Software
